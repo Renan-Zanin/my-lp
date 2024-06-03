@@ -3,33 +3,29 @@
 import { Button } from "@/components/ui/button";
 import HeroImage from "@/assets/hero.png";
 import Image from "next/image";
+import TypingEffect from "./TypingEffect";
 
 export default function HeroSection() {
+  const words = ["Web", "Freelancer", "Versátil", "Dedicado"];
   return (
-    <section
-      id="#heroSection"
-      className="flex items-center justify-between mb-10 mt-20"
-    >
-      <div>
-        <h1 className="text-5xl text-white font-bold w-[550px] leading-tight mb-10">
-          Transforme seu negócio com páginas de{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">
-            Alto Impacto!
-          </span>
+    <section id="#heroSection" className="flex items-center h-[100vh]">
+      <div className="flex flex-col items-center mx-auto relative">
+        <h1 className="text-[80px] text-white font-bold leading-tight mb-5">
+          Renan Zanin Oliveira
         </h1>
-        <p className="text-2xl w-[600px] mb-16">
-          Conquiste mais clientes, aumente suas vendas e expanda sua presença
-          online!
-        </p>
-        <Button>Descubra Agora!</Button>
-      </div>
-      <div className="relative">
-        <Image
-          src={HeroImage}
-          alt=""
-          className="backdrop-filter backdrop-blur-sm bg-opacity-100 z-50"
-        />
-        <div className="absolute top-10 z-10 w-[450px] h-[350px] bg-gradient-to-br from-blue-500 to-purple-500 rounded-full shadow-lg filter blur-3xl opacity-25"></div>
+        <span className="text-4xl font-extralight mb-16">
+          Desenvolvedor{" "}
+          <TypingEffect
+            words={words}
+            delay={200}
+            deletingSpeed={100}
+            typingSpeed={150}
+          />
+        </span>
+        <h2 className="text-2xl text-white leading-tight mb-5">
+          Transformando ideias em experiências digitais incríveis
+        </h2>
+        <div className="absolute top-[-120px] w-[750px] h-[550px] bg-gradient-to-br from-blue-500 to-purple-500 rounded-full shadow-lg filter blur-[100px] opacity-[0.075]"></div>
       </div>
     </section>
   );

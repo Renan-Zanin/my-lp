@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import StarsCanvas from "@/components/starBackground";
+import "animate.css/animate.compat.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex flex-col items-center">
           <Navbar />
+          <StarsCanvas />
           {children}
           <Footer />
         </div>

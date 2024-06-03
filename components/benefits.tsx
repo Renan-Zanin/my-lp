@@ -23,7 +23,7 @@ export default function BenefitsSection() {
       <div className="mx-auto">
         <div className="flex flex-col items-center">
           <h2 className="text-5xl font-bold text-white text-center w-[700px] leading-tight mb-10">
-            Conheça os benefícios exclusivos de nossas soluções personalizadas.
+            Conheça os benefícios exclusivos das minhas soluções personalizadas.
           </h2>
           <div className="grid grid-cols-3 gap-10 mb-16">
             <Card className="flex flex-col items-center">
@@ -35,7 +35,7 @@ export default function BenefitsSection() {
               </CardHeader>
               <CardContent>
                 <p className="w-[250px]">
-                  Oferecemos total personalização em nossas soluções, adaptando
+                  Ofereço total personalização em minhas soluções, adaptando
                   cada elemento para refletir a identidade da sua empresa.
                 </p>
               </CardContent>
@@ -50,9 +50,8 @@ export default function BenefitsSection() {
               </CardHeader>
               <CardContent>
                 <p className="w-[250px]">
-                  Nosso suporte especializado estará sempre disponível para
-                  garantir que sua presença online evolua conforme as
-                  necessidades do seu negócio.
+                  Estou sempre disponível para garantir que sua presença online
+                  evolua conforme as necessidades do seu negócio.
                 </p>
               </CardContent>
             </Card>
@@ -66,14 +65,14 @@ export default function BenefitsSection() {
               </CardHeader>
               <CardContent>
                 <p className="w-[250px]">
-                  Nossas páginas se adaptam a qualquer dispositivo, garantindo
+                  Minhas páginas se adaptam a qualquer dispositivo, garantindo
                   uma experiência consistente para todos os seus clientes.
                 </p>
               </CardContent>
             </Card>
           </div>
 
-          <Button>Veja Todos os Benefícios!</Button>
+          <Button className="z-10">Veja Todos os Benefícios!</Button>
         </div>
       </div>
     </section>
