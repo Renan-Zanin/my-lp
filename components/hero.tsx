@@ -10,10 +10,10 @@ export default function HeroSection() {
   return (
     <section id="#heroSection" className="flex items-center h-[100vh]">
       <div className="flex flex-col items-center mx-auto relative">
-        <h1 className="text-[80px] text-white font-bold leading-tight mb-5">
+        <h1 className="md:text-[80px] text-3xl text-white font-bold leading-tight mb-5">
           Renan Zanin Oliveira
         </h1>
-        <span className="text-4xl font-extralight mb-16">
+        <span className="md:text-4xl text-xl font-extralight md:mb-16 mb-10">
           Desenvolvedor{" "}
           <TypingEffect
             words={words}
@@ -22,7 +22,7 @@ export default function HeroSection() {
             typingSpeed={150}
           />
         </span>
-        <h2 className="text-2xl text-white leading-tight mb-5">
+        <h2 className="md:text-2xl md:w-full w-[80vw] text-center text-white leading-tight mb-5">
           Transformando ideias em experiências digitais incríveis
         </h2>
         <div className="absolute top-[-120px] w-[750px] h-[550px] bg-gradient-to-br from-blue-500 to-purple-500 rounded-full shadow-lg filter blur-[100px] opacity-[0.075]"></div>

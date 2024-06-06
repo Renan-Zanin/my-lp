@@ -42,7 +42,7 @@ export default function TypingEffect({
     delay,
   ]);
   return (
-    <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 text-center text-4xl font-semibold">
+    <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 text-center md:text-4xl text-xl font-semibold">
       {`${words[wordIndex].substring(0, subIndex)}`}
     </span>
   );

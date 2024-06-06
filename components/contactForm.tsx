@@ -47,7 +47,7 @@ export default function ContactForm() {
   return (
     <>
       {!firstRender ? (
-        <div className="flex flex-col justify-start w-full">
+        <div className="flex flex-col justify-start md:w-full w-[80vw]">
           <Form {...form}>
             <form className="space-y-4 my-8">
               <FormField
@@ -55,7 +55,7 @@ export default function ContactForm() {
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-[18px]">Nome</FormLabel>
+                    <FormLabel className="md:text-[18px]">Nome</FormLabel>
                     <FormControl>
                       <Input
                         disabled={loading}
@@ -73,7 +73,7 @@ export default function ContactForm() {
                 name="phone"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-[18px]">Whatsapp</FormLabel>
+                    <FormLabel className="md:text-[18px]">Whatsapp</FormLabel>
                     <FormControl>
                       <Input
                         disabled={loading}
@@ -92,7 +92,7 @@ export default function ContactForm() {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-[18px]">Email</FormLabel>
+                    <FormLabel className="md:text-[18px]">Email</FormLabel>
                     <FormControl>
                       <Input
                         disabled={loading}
@@ -111,7 +111,7 @@ export default function ContactForm() {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-[18px]">Mensagem</FormLabel>
+                    <FormLabel className="md:text-[18px]">Mensagem</FormLabel>
                     <FormControl>
                       <Textarea
                         disabled={loading}

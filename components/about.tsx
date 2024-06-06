@@ -26,12 +26,12 @@ export default function AboutSection() {
         animateOut="fadeOutUp"
         animateOnce={true}
       >
-        <h1 className="text-xl text-purple-500 font-medium leading-tight mb-8 border-solid border-purple-500 border-2 px-4 py-1 rounded-full h-full w-full bg-purple-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+        <h1 className="md:text-xl text-purple-500 font-medium leading-tight md:mb-8 mb-10 border-solid border-purple-500 border-2 px-4 py-1 rounded-full h-full w-full bg-purple-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
           Sobre mim
         </h1>
       </ScrollAnimation>
 
-      <div className="flex flex-row justify-between mb-10">
+      <div className="flex md:flex-row flex-col justify-between items-center mb-10">
         <div className="relative">
           <ScrollAnimation
             animateIn="fadeInLeft"
@@ -42,10 +42,10 @@ export default function AboutSection() {
             <Image
               src={AboutImage}
               alt=""
-              className="backdrop-filter backdrop-blur-sm bg-opacity-100 w-[500px] z-20"
+              className="backdrop-filter backdrop-blur-sm bg-opacity-100 md:w-[500px] w-[200px] md:mb-0 mb-6 z-20"
             />
           </ScrollAnimation>
-          <div className="absolute z-[-10] right-0 top-5 w-[550px] h-[450px] bg-gradient-to-br from-blue-500 to-purple-500 rounded-full shadow-lg filter blur-[75px] opacity-20"></div>
+          <div className="absolute z-[-10] md:right-0 md:top-5 right-0 top-[-10px] md:w-[550px] md:h-[450px] w-[200px] h-[200px] bg-gradient-to-br from-blue-500 to-purple-500 rounded-full shadow-lg filter blur-[75px] opacity-20"></div>
         </div>
         <ScrollAnimation
           animateIn="fadeInRight"
@@ -53,11 +53,11 @@ export default function AboutSection() {
           duration={1.5}
           animateOnce={true}
         >
-          <div className="flex flex-col items-end">
-            <h2 className="text-5xl font-bold text-white text-end w-[700px] leading-tight mb-10">
+          <div className="flex flex-col md:items-end items-center">
+            <h2 className="md:text-5xl text-2xl font-bold text-white md:text-end text-center w-[700px] leading-tight mb-10">
               Me conheça um pouco mais
             </h2>
-            <p className="text-xl w-[600px] mb-16 text-wrap text-end">
+            <p className="md:text-xl text-[16px] md:w-[600px] w-[80vw] md:mb-16 mb-12 text-wrap md:text-end text-start">
               Bem vindo ao meu mundo digital! Sou o Renan, um desenvolvedor web
               freelancer apaixonado por transformar ideias em experiências
               digitais incríveis. Ajudo clientes a alcançar seus objetivos
@@ -65,7 +65,7 @@ export default function AboutSection() {
               não apenas atendam às necessidades do cliente, mas também superem
               suas expectativas.
             </p>
-            <Button className="z-20">Saiba Mais Detalhes!</Button>
+            <Button className="z-20 md:mb-0 mb-10">Saiba Mais Detalhes!</Button>
           </div>
         </ScrollAnimation>
       </div>
@@ -75,12 +75,12 @@ export default function AboutSection() {
           animateOut="fadeOutUp"
           animateOnce={true}
         >
-          <h1 className="text-xl text-purple-500 font-medium leading-tight mb-12 border-solid border-purple-500 border-2 px-4 py-1 rounded-full h-full w-full bg-purple-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+          <h1 className="md:text-xl text-purple-500 font-medium leading-tight md:mb-12 mb-10 border-solid border-purple-500 border-2 px-4 py-1 rounded-full h-full w-full bg-purple-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
             Minhas habilidades
           </h1>
         </ScrollAnimation>
 
-        <div className="flex flex-row justify-between min-w-full">
+        <div className="flex md:flex-row flex-col md:justify-between items-center min-w-full">
           <ScrollAnimation
             animateIn="slideInUp"
             animateOut="slideOutLeft"
@@ -88,7 +88,7 @@ export default function AboutSection() {
             animateOnce={true}
           >
             <div className="flex items-center">
-              <p className="text-xl w-[700px] text-wrap text-start">
+              <p className="md:text-xl md:w-[700px] w-[80vw] text-wrap md:text-start text-start md:mb-0 mb-12">
                 Sou hábil com as principais tecnologias de desenvolvimento web,
                 incluindo HTML5, CSS3, JavaScript, incluindo frameworks como
                 React.js e Next.js, e ferramentas como Figma, Wordpress, Wix e
@@ -100,7 +100,7 @@ export default function AboutSection() {
             </div>
           </ScrollAnimation>
 
-          <div className="grid grid-cols-4 gap-8 gap-y-12">
+          <div className="grid md:grid-cols-4 grid-cols-3 md:gap-8 md:gap-y-12 gap-6">
             <ScrollAnimation
               animateIn="zoomInDown"
               animateOut="zoomOutDown"
@@ -108,8 +108,12 @@ export default function AboutSection() {
               animateOnce={true}
             >
               <div className="flex flex-col justify-center items-center">
-                <FaHtml5 size={70} color="#417FF6" />
-                <p className="text-[14px] mt-2">HTML5</p>
+                <FaHtml5
+                  size={70}
+                  color="#417FF6"
+                  className="md:scale-100 scale-[0.70]"
+                />
+                <p className="md:text-[14px] text-[12px] md:mt-2 mt-0">HTML5</p>
               </div>
             </ScrollAnimation>
             <ScrollAnimation
@@ -120,8 +124,12 @@ export default function AboutSection() {
               animateOnce={true}
             >
               <div className="flex flex-col justify-center items-center">
-                <FaCss3Alt size={70} color="#417FF6" />
-                <p className="text-[14px] mt-2">CSS3</p>
+                <FaCss3Alt
+                  size={70}
+                  color="#417FF6"
+                  className="md:scale-100 scale-[0.70]"
+                />
+                <p className="md:text-[14px] text-[12px] md:mt-2 mt-0">CSS3</p>
               </div>
             </ScrollAnimation>
 
@@ -133,8 +141,14 @@ export default function AboutSection() {
               animateOnce={true}
             >
               <div className="flex flex-col justify-center items-center">
-                <IoLogoJavascript size={70} color="#417FF6" />
-                <p className="text-[14px] mt-2">Javascript</p>
+                <IoLogoJavascript
+                  size={70}
+                  color="#417FF6"
+                  className="md:scale-100 scale-[0.70]"
+                />
+                <p className="md:text-[14px] text-[12px] md:mt-2 mt-0">
+                  Javascript
+                </p>
               </div>
             </ScrollAnimation>
 
@@ -146,8 +160,12 @@ export default function AboutSection() {
               animateOnce={true}
             >
               <div className="flex flex-col justify-center items-center">
-                <FaReact size={70} color="#417FF6" />
-                <p className="text-[14px] mt-2">React</p>
+                <FaReact
+                  size={70}
+                  color="#417FF6"
+                  className="md:scale-100 scale-[0.70]"
+                />
+                <p className="md:text-[14px] text-[12px] md:mt-2 mt-0">React</p>
               </div>
             </ScrollAnimation>
 
@@ -159,8 +177,14 @@ export default function AboutSection() {
               animateOnce={true}
             >
               <div className="flex flex-col justify-center items-center">
-                <SiNextdotjs size={70} color="#417FF6" />
-                <p className="text-[14px] mt-2">NextJs</p>
+                <SiNextdotjs
+                  size={70}
+                  color="#417FF6"
+                  className="md:scale-100 scale-[0.70]"
+                />
+                <p className="md:text-[14px] text-[12px] md:mt-2 mt-0">
+                  NextJs
+                </p>
               </div>
             </ScrollAnimation>
 
@@ -172,8 +196,12 @@ export default function AboutSection() {
               animateOnce={true}
             >
               <div className="flex flex-col justify-center items-center">
-                <FaFigma size={70} color="#417FF6" />
-                <p className="text-[14px] mt-2">Figma</p>
+                <FaFigma
+                  size={70}
+                  color="#417FF6"
+                  className="md:scale-100 scale-[0.70]"
+                />
+                <p className="md:text-[14px] text-[12px] md:mt-2 mt-0">Figma</p>
               </div>
             </ScrollAnimation>
 
@@ -185,8 +213,14 @@ export default function AboutSection() {
               animateOnce={true}
             >
               <div className="flex flex-col justify-center items-center">
-                <FaWordpress size={70} color="#417FF6" />
-                <p className="text-[14px] mt-2">Wordpress</p>
+                <FaWordpress
+                  size={70}
+                  color="#417FF6"
+                  className="md:scale-100 scale-[0.70]"
+                />
+                <p className="md:text-[14px] text-[12px] md:mt-2 mt-0">
+                  Wordpress
+                </p>
               </div>
             </ScrollAnimation>
 
@@ -198,8 +232,14 @@ export default function AboutSection() {
               animateOnce={true}
             >
               <div className="flex flex-col justify-center items-center">
-                <FaShopify size={70} color="#417FF6" />
-                <p className="text-[14px] mt-2">Shopify</p>
+                <FaShopify
+                  size={70}
+                  color="#417FF6"
+                  className="md:scale-100 scale-[0.70]"
+                />
+                <p className="md:text-[14px] text-[12px] md:mt-2 mt-0">
+                  Shopify
+                </p>
               </div>
             </ScrollAnimation>
           </div>
