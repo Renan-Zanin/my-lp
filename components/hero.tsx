@@ -1,14 +1,31 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import HeroImage from "@/assets/hero.png";
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import TypingEffect from "./TypingEffect";
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
 export default function HeroSection() {
   const words = ["Web", "Freelancer", "Versátil", "Dedicado"];
+
+  const [visible, setVisible] = useState(true);
+
+  function handleScroll() {
+    if (window.scrollY > 100) {
+      setVisible(false);
+    } else {
+      setVisible(true);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <section id="#heroSection" className="flex items-center h-[100vh]">
+    <section id="#heroSection" className="flex items-center h-[100vh] relative">
       <div className="flex flex-col items-center mx-auto relative">
         <h1 className="md:text-[80px] text-3xl text-white font-bold leading-tight mb-5">
           Renan Zanin Oliveira
@@ -26,6 +43,16 @@ export default function HeroSection() {
           Transformando ideias em experiências digitais incríveis
         </h2>
         <div className="absolute top-[-120px] w-[750px] h-[550px] bg-gradient-to-br from-blue-500 to-purple-500 rounded-full shadow-lg filter blur-[100px] opacity-[0.075]"></div>
+      </div>
+      <div
+        className={`absolute bottom-12 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 ${
+          visible ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <MdOutlineKeyboardDoubleArrowDown
+          className=" animate-float text-purple-500"
+          size={40}
+        />
       </div>
     </section>
   );

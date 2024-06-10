@@ -1,7 +1,7 @@
 "use client";
 
 import * as z from "zod";
-import { useForm } from "react-hook-form";
+import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useEffect, useState } from "react";
 import {
@@ -14,8 +14,10 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Button } from "./ui/button";
+import { sendEmail } from "@/app/_actions";
 
-const formSchema = z.object({
+export const formSchema = z.object({
   name: z.string().min(1),
   phone: z.string().min(1),
   email: z.string().min(1),
@@ -32,7 +34,7 @@ export default function ContactForm() {
     if (firstRender) {
       setFirstRender(false);
     }
-  });
+  }, [firstRender]);
 
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(formSchema),
@@ -44,12 +46,26 @@ export default function ContactForm() {
     },
   });
 
+  const onSubmit: SubmitHandler<ContactFormValues> = async (data) => {
+    const result = formSchema.safeParse(data);
+    const finalResult = await sendEmail(result);
+
+    if (finalResult?.success) {
+      console.log({ data: finalResult.data });
+      return;
+    }
+    console.log(finalResult?.error);
+  };
+
   return (
     <>
       {!firstRender ? (
         <div className="flex flex-col justify-start md:w-full w-[80vw]">
           <Form {...form}>
-            <form className="space-y-4 my-8">
+            <form
+              className="space-y-4 my-8"
+              onSubmit={form.handleSubmit(onSubmit)}
+            >
               <FormField
                 control={form.control}
                 name="name"
@@ -124,6 +140,7 @@ export default function ContactForm() {
                   </FormItem>
                 )}
               />
+              <Button type="submit">Enviar</Button>
             </form>
           </Form>
         </div>

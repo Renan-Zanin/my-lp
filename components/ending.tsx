@@ -1,8 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import HeroImage from "@/assets/hero.png";
-import Image from "next/image";
 
 export default function EndingSection() {
   return (
