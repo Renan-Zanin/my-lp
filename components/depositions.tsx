@@ -14,7 +14,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 export default function Depositions() {
   return (
     <section
-      id="#solutionSection"
+      id="#depositionsSection"
       className="flex flex-col md:items-end items-center mt-14 md:mb-36 mb-24"
     >
       <ScrollAnimation
@@ -59,8 +59,8 @@ export default function Depositions() {
           animateOnce={true}
         >
           <div className="flex flex-col md:items-end items-center">
-            <h1 className="md:text-5xl text-2xl font-bold text-white md:text-end text-center w-[700px] leading-tight mb-10">
-              Me conheça um pouco mais
+            <h1 className="md:text-5xl text-2xl font-bold text-white md:text-end text-center md:w-[700px] leading-tight mb-10">
+              O que meus clientes dizem
             </h1>
             <p className="md:text-xl text-[16px] md:w-[600px] w-[80vw] md:mb-16 mb-12 text-wrap md:text-end text-start">
               Nada fala mais sobre a qualidade do meu trabalho do que as

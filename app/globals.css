@@ -101,4 +101,9 @@
   ::-webkit-scrollbar-thumb:hover {
     background-color: #2563eb;
   }
+
+  /* html {
+    --scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important;
+  } */
 }

@@ -11,8 +11,7 @@ const buttonVariants = cva(
       variant: {
         default:
           "bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold py-2 px-4 rounded-full hover:from-purple-700 hover:to-blue-700 transition-colors duration-300 ease-in-out",
-        destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+        gym: "bg-cyan-400 text-[#000000] rounded-2xl font-bold text-[16px] hover:bg-rose-600/80 z-20",
         outline:
           "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary:

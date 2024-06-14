@@ -16,7 +16,7 @@ import {
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { Menu, X } from "lucide-react";
 
-export default function Navbar() {
+export function GymNavbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -40,7 +40,7 @@ export default function Navbar() {
   if (isDesktop) {
     return (
       <nav
-        className={`fixed top-0 w-full z-50 flex flex-row items-center justify-center py-4  ${
+        className={`absolute top-0 w-[80vw] z-50 flex flex-row items-center justify-center py-4 bg-neutral-800 rounded-full mt-4 ${
           isScrolled
             ? "shadow-foreground shadow-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10 transition-all duration-200 "
             : ""
@@ -78,8 +78,19 @@ export default function Navbar() {
               duration={700}
             >
               <span className="sublinhado-gradiente font-semibold">
-                Benefícios
+                Instalação
               </span>
+            </Link>
+          </Button>
+          <Button asChild variant="link" className="text-xl">
+            <Link
+              to="#depositionsSection"
+              spy={true}
+              smooth={true}
+              offset={-110}
+              duration={700}
+            >
+              <span className="sublinhado-gradiente font-semibold">Aulas</span>
             </Link>
           </Button>
           <Button asChild variant="link" className="text-xl">
@@ -103,13 +114,11 @@ export default function Navbar() {
               offset={-110}
               duration={700}
             >
-              <span className="sublinhado-gradiente font-semibold">
-                Portifólio
-              </span>
+              <span className="sublinhado-gradiente font-semibold">Planos</span>
             </Link>
           </Button>
 
-          <Button asChild>
+          <Button asChild variant="gym" className="cursor-pointer">
             <Link
               to="#contactSection"
               spy={true}

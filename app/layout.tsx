@@ -15,18 +15,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={inter.className}>
-        <div className="flex flex-col items-center">
-          <Navbar />
-          <StarsCanvas />
-          {children}
-          <Footer />
-        </div>
+        <div className="flex flex-col items-center">{children}</div>
       </body>
     </html>
   );

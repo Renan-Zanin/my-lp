@@ -18,7 +18,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 export default function AboutSection() {
   return (
     <section
-      id="#solutionSection"
+      id="#aboutSection"
       className="flex flex-col items-center justify-center mt-14 mb-36"
     >
       <ScrollAnimation
@@ -54,7 +54,7 @@ export default function AboutSection() {
           animateOnce={true}
         >
           <div className="flex flex-col md:items-end items-center">
-            <h2 className="md:text-5xl text-2xl font-bold text-white md:text-end text-center w-[700px] leading-tight mb-10">
+            <h2 className="md:text-5xl text-2xl font-bold text-white md:text-end text-center md:w-[700px] leading-tight mb-10">
               Me conheça um pouco mais
             </h2>
             <p className="md:text-xl text-[16px] md:w-[600px] w-[80vw] md:mb-16 mb-12 text-wrap md:text-end text-start">

@@ -5,7 +5,10 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col justify-center items-center mt-14 md:mb-36 mb-24">
+    <div
+      className="flex flex-col justify-center items-center mt-14 md:mb-36 mb-24"
+      id="#contactSection"
+    >
       <div>
         <h1 className="md:text-xl text-purple-500 font-medium leading-tight md:mb-8 mb-10 border-solid border-purple-500 border-2 px-4 py-1 rounded-full h-full w-full bg-purple-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
           Entre em contato
