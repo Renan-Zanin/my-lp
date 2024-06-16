@@ -5,7 +5,10 @@ import React from "react";
 
 export default function AboutGym() {
   return (
-    <section className="relative pb-16 w-[99.6vw] flex justify-start pl-[15vw] pr-[15vw] bg-black">
+    <section
+      id="#gymAbout"
+      className="relative pb-16 w-[99.6vw] flex justify-start pl-[15vw] pr-[15vw] bg-black"
+    >
       <div className="mt-24 flex flex-col items-start w-full">
         <h1 className=" md:text-5xl text-white tracking-wide text-start uppercase w-[40vw]">
           Tudo o que Você Precisa para Alcançar Suas Metas!

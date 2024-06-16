@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { GymNavbar } from "@/app/academia/_components/GymNavbar";
+import "../gym.css";
 
 export const metadata: Metadata = {
   title: "Academia",

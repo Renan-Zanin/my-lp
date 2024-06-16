@@ -5,7 +5,10 @@ import React from "react";
 
 export default function HeroGym() {
   return (
-    <section className="relative min-h-screen w-[99.6vw] flex items-center h-screen justify-start bg-cover bg-[url('/bg-gym.jpg')] overflow-hidden">
+    <section
+      id="#gymHero"
+      className="relative min-h-screen w-[99.6vw] flex items-center h-screen justify-start bg-cover bg-[url('/bg-gym.jpg')] overflow-hidden"
+    >
       <div className=" absolute z-10 right-2 md:w-[180vw] md:h-full w-[200px] h-[200px] bg-gradient-to-tr from-neutral-900 to-black rounded-full filter blur-[80px] opacity-80"></div>
       <div className="flex flex-col items-start justify-center relative z-20 pl-[10vw]">
         <h1 className="md:text-[70px] text-3xl text-white font-bold leading-tight mb-0 uppercase ">

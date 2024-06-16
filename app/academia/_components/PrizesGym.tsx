@@ -14,7 +14,10 @@ import { VscDebugBreakpointLog } from "react-icons/vsc";
 
 export default function PrizesGym() {
   return (
-    <section className="relative pb-16 w-[99.6vw] flex justify-center pl-[15vw] pr-[15vw] bg-black">
+    <section
+      id="#gymPrizes"
+      className="relative pb-16 w-[99.6vw] flex justify-center pl-[15vw] pr-[15vw] bg-black"
+    >
       <div className="mt-24 flex flex-col items-center w-full">
         <h1 className=" md:text-5xl text-white tracking-wide text-center uppercase w-[40vw]">
           Planos Flexíveis para Todos os Estilos de Vida
@@ -168,7 +171,7 @@ export default function PrizesGym() {
           </Card>
         </div>
       </div>
-      <div className="absolute z-[10] top-0 left-0 md:w-[550px] md:h-[450px] w-[300px] h-[200px] bg-gradient-to-br from-rose-500 to-amber-500 rounded-full shadow-lg filter blur-[75px] opacity-10" />
+      <div className="absolute z-[10] left-1/2 top-72 transform -translate-x-1/2 md:w-[550px] md:h-[450px] w-[300px] h-[200px] bg-gradient-to-br from-rose-500 to-rose-600 rounded-full shadow-lg filter blur-[75px] opacity-10" />
     </section>
   );
 }

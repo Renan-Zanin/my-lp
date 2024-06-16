@@ -43,7 +43,7 @@ export function GymNavbar() {
         <div className="flex gap-x-2">
           <Button asChild variant="link" className="text-xl">
             <Link
-              to="#heroSection"
+              to="#gymHero"
               spy={true}
               smooth={true}
               offset={-110}
@@ -54,7 +54,7 @@ export function GymNavbar() {
           </Button>
           <Button asChild variant="link" className="text-xl">
             <Link
-              to="#aboutSection"
+              to="#gymAbout"
               spy={true}
               smooth={true}
               offset={-110}
@@ -65,20 +65,7 @@ export function GymNavbar() {
           </Button>
           <Button asChild variant="link" className="text-xl">
             <Link
-              to="#benefitsSection"
-              spy={true}
-              smooth={true}
-              offset={-110}
-              duration={700}
-            >
-              <span className="sublinhado-gradiente font-semibold">
-                Instalação
-              </span>
-            </Link>
-          </Button>
-          <Button asChild variant="link" className="text-xl">
-            <Link
-              to="#depositionsSection"
+              to="#gymClasses"
               spy={true}
               smooth={true}
               offset={-110}
@@ -89,7 +76,20 @@ export function GymNavbar() {
           </Button>
           <Button asChild variant="link" className="text-xl">
             <Link
-              to="#depositionsSection"
+              to="#gymFacilities"
+              spy={true}
+              smooth={true}
+              offset={-110}
+              duration={700}
+            >
+              <span className="sublinhado-gradiente font-semibold">
+                Instalações
+              </span>
+            </Link>
+          </Button>
+          <Button asChild variant="link" className="text-xl">
+            <Link
+              to="#gymDepositions"
               spy={true}
               smooth={true}
               offset={-110}
@@ -102,7 +102,7 @@ export function GymNavbar() {
           </Button>
           <Button asChild variant="link" className="text-xl">
             <Link
-              to="#portifolioSection"
+              to="#gymPrizes"
               spy={true}
               smooth={true}
               offset={-110}
@@ -123,9 +123,9 @@ export function GymNavbar() {
               smooth={true}
               offset={-110}
               duration={700}
-              className="text-foreground ml-10"
+              className="text-foreground ml-10 text-black"
             >
-              Comece agora!
+              <p className="text-black">Comece agora!</p>
             </Link>
           </Button>
         </div>

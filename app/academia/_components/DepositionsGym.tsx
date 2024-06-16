@@ -6,7 +6,10 @@ import DepositionsCard from "./DepositionsCard";
 
 export default function DespositionsGym() {
   return (
-    <section className="relative pb-16 w-[99.6vw] flex justify-end pl-[15vw] pr-[15vw] bg-zinc-900">
+    <section
+      id="#gymDepositions"
+      className="relative pb-16 w-[99.6vw] flex justify-end pl-[15vw] pr-[15vw] bg-zinc-900"
+    >
       <div className="mt-24 flex flex-col items-end w-full">
         <h1 className=" md:text-5xl text-white tracking-wide text-end uppercase w-[40vw]">
           Histórias de Sucesso que Inspiram
@@ -33,7 +36,7 @@ export default function DespositionsGym() {
           </div>
         </div>
       </div>
-      <div className="absolute z-[10] top-0 left-0 md:w-[550px] md:h-[450px] w-[300px] h-[200px] bg-gradient-to-br from-rose-500 to-amber-500 rounded-full shadow-lg filter blur-[75px] opacity-10" />
+      {/* <div className="absolute z-[10] top-0 left-0 md:w-[550px] md:h-[450px] w-[300px] h-[200px] bg-gradient-to-br from-rose-500 to-amber-500 rounded-full shadow-lg filter blur-[75px] opacity-10" /> */}
     </section>
   );
 }

@@ -5,6 +5,7 @@ import DespositionsGym from "./_components/DepositionsGym";
 import FacilitiesGym from "./_components/FacilitiesGym";
 import PrizesGym from "./_components/PrizesGym";
 import AboutGym from "./_components/aboutGym";
+import { Footer } from "./_components/footer";
 import HeroGym from "./_components/hero";
 
 export default function Gym() {
@@ -21,6 +22,7 @@ export default function Gym() {
       <FacilitiesGym />
       <DespositionsGym />
       <PrizesGym />
+      <Footer />
     </main>
   );
 }
