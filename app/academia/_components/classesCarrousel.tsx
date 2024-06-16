@@ -8,16 +8,22 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import ClassesCard from "./classesCard";
+import Autoplay from "embla-carousel-autoplay";
 
 export default function ClassesCarrousel() {
   return (
     <Carousel
-      className="w-full h-[550px] mt-32 relative flex items-center justify-center"
+      className="w-full h-[550px] mt-14 relative flex items-center justify-center"
       opts={{
         align: "start",
         loop: true,
         duration: 25,
       }}
+      plugins={[
+        Autoplay({
+          delay: 3000,
+        }),
+      ]}
     >
       <CarouselContent className="-ml-4 h-[550px] w-full mt-32">
         <CarouselItem className="pl-4 overflow-visible basis-auto">

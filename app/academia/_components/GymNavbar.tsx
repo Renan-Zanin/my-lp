@@ -39,13 +39,7 @@ export function GymNavbar() {
 
   if (isDesktop) {
     return (
-      <nav
-        className={`absolute top-0 w-[80vw] z-50 flex flex-row items-center justify-center py-4 bg-neutral-800 rounded-full mt-4 ${
-          isScrolled
-            ? "shadow-foreground shadow-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10 transition-all duration-200 "
-            : ""
-        }`}
-      >
+      <nav className="absolute top-0 w-[80vw] z-50 flex flex-row items-center justify-center py-4 bg-neutral-800 rounded-full mt-4">
         <div className="flex gap-x-2">
           <Button asChild variant="link" className="text-xl">
             <Link
@@ -118,7 +112,11 @@ export function GymNavbar() {
             </Link>
           </Button>
 
-          <Button asChild variant="gym" className="cursor-pointer">
+          <Button
+            asChild
+            variant="gym"
+            className="cursor-pointer bg-rose-600 text-black"
+          >
             <Link
               to="#contactSection"
               spy={true}

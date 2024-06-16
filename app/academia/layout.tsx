@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { GymNavbar } from "@/app/academia/_components/GymNavbar";
 
 export const metadata: Metadata = {

@@ -6,14 +6,14 @@ import React from "react";
 export default function AboutGym() {
   return (
     <section className="relative pb-16 w-[99.6vw] flex justify-start pl-[15vw] pr-[15vw] bg-black">
-      <div className="mt-72 flex flex-col items-start w-full">
+      <div className="mt-24 flex flex-col items-start w-full">
         <h1 className=" md:text-5xl text-white tracking-wide text-start uppercase w-[40vw]">
           Tudo o que Você Precisa para Alcançar Suas Metas!
         </h1>
         <h2 className="mt-8 text-2xl text-gray-300">
           Saúde física e mental em um único lugar
         </h2>
-        <div className="flex flex-row items-center justify-between mt-[-100px] gap-20 w-full">
+        <div className="flex flex-row items-center justify-between gap-20 w-full">
           <div>
             <p className="w-[30vw] text-start text-[18px]">
               Ao se juntar à nossa academia, você não está apenas melhorando sua
@@ -23,12 +23,17 @@ export default function AboutGym() {
               amigável e de apoio torna cada visita uma experiência agradável e
               motivadora.
             </p>
-            <Button variant="gym" className="bg-rose-600 mt-10">
+            <Button variant="gym" className="mt-10">
               Experimente a Transformação
             </Button>
           </div>
-          <div className=" relative z-20 h-[500px] w-[450px] bg-rose-600 rounded-3xl">
-            <div className="absolute z-30 h-[650px] w-[450px] bg-cover bg-[url('/card-2.png')] bottom-0 right-0 " />
+          <div className="flex flex-row gap-8">
+            <div className=" relative z-20 h-[400px] w-[350px] bg-black rounded-3xl mt-20">
+              <div className="absolute z-30 h-[400px] w-[350px] bg-cover bg-[url('/card-4.jpg')] bottom-0 right-0 rounded-3xl" />
+            </div>
+            <div className=" relative z-20 h-[400px] w-[350px] bg-rose-600 rounded-3xl">
+              <div className="absolute z-30 h-[500px] w-[350px] bg-cover bg-[url('/card-2.png')] bottom-0 right-0 rounded-3xl" />
+            </div>
           </div>
         </div>
       </div>

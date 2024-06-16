@@ -4,8 +4,8 @@ import ClassesCarrousel from "./classesCarrousel";
 
 export default function ClassesGym() {
   return (
-    <section className="relative pb-16 w-[99.6vw] flex justify-start pl-[15vw] pr-[15vw] bg-gray-800 overflow-hidden">
-      <div className="mt-32 flex flex-col items-center w-full">
+    <section className="relative pb-16 w-[99.6vw] flex justify-start pl-[15vw] pr-[15vw] bg-zinc-900 overflow-hidden">
+      <div className="mt-24 flex flex-col items-center w-full">
         <h1 className=" md:text-5xl text-white tracking-wide text-center uppercase w-[40vw]">
           Muito Mais que um Treino!
         </h1>
