@@ -3,6 +3,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useSpring, animated } from "@react-spring/web";
+import { useInView } from "react-intersection-observer";
 
 interface NumbersCardProps {
   amount: number;
@@ -10,9 +11,14 @@ interface NumbersCardProps {
 }
 
 export default function NumbersCard({ amount, text }: NumbersCardProps) {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // A animação dispara apenas uma vez
+    threshold: 0.2, // 10% do elemento visível para disparar a animação
+  });
+
   const props = useSpring({
     from: { number: 0 },
-    to: { number: amount },
+    to: { number: inView ? amount : 0 },
     config: { duration: 1500 },
   });
 
