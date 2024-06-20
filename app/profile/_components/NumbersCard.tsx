@@ -13,7 +13,7 @@ interface NumbersCardProps {
 export default function NumbersCard({ amount, text }: NumbersCardProps) {
   const { ref, inView } = useInView({
     triggerOnce: true, // A animação dispara apenas uma vez
-    threshold: 0.2, // 10% do elemento visível para disparar a animação
+    threshold: 0.5, // 10% do elemento visível para disparar a animação
   });
 
   const props = useSpring({

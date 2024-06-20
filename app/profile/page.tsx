@@ -5,6 +5,7 @@ import DepositionsProfile from "./_components/DepositionsProfile";
 import HeroProfile from "./_components/Hero";
 import ModulesProfile from "./_components/ModulesProfile";
 import Numbers from "./_components/Numbers";
+import PriceProfile from "./_components/PriceProfile";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ModulesProfile />
       <Numbers />
       <DepositionsProfile />
+      <PriceProfile />
     </main>
   );
 }
