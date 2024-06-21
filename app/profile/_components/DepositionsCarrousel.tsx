@@ -16,7 +16,7 @@ import DepositionImage3 from "/public/deposition.jpg";
 export default function DepositionsCarrousel() {
   return (
     <Carousel
-      className="w-[20vw] h-[350px] relative flex items-center justify-center mt-24"
+      className="lg:w-[20vw] md:w-[32vw] w-[60vw] h-[350px] relative flex items-center justify-center mt-24"
       opts={{
         align: "start",
         loop: true,

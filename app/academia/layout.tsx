@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { GymNavbar } from "@/app/academia/_components/GymNavbar";
 import "../gym.css";
+import { Exo } from "next/font/google";
+
+const exo = Exo({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Academia",
@@ -9,9 +14,11 @@ export const metadata: Metadata = {
 
 export default function GymLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex items-center justify-center bg-neutral-900 w-full">
-      <GymNavbar />
-      {children}
+    <div className={exo.className}>
+      <div className="flex items-center justify-center bg-neutral-900 w-full">
+        <GymNavbar />
+        {children}
+      </div>
     </div>
   );
 }

@@ -8,34 +8,33 @@ import Image from "next/image";
 export default function AboutProfile() {
   return (
     <section
-      id="#gymAbout"
-      className="pb-24 flex justify-start px-[15vw] pt-10"
+      id="#profileAbout"
+      className="pb-24 flex justify-start 2xl:px-[15vw] lg:px-[10vw] px-[5vw] pt-10"
     >
-      <div className="flex items-center justify-between">
-        <div className="relative">
+      <div className="flex md:flex-row flex-col-reverse items-center md:justify-between justify-center">
+        <div className="relative md:mt-0 mt-16">
           <Image
             src={ProfileImage}
             alt="Imagem de perfil"
-            className="items-center rounded-tr-[400px] h-[85vh] w-[90vh]"
+            className="items-center md:rounded-tr-[400px] 2xl:h-[70vh] xl:h-[60vh] lg:h-[50vh] h-[30vh] object-contain"
           />
-          <div className="absolute top-10 h-full w-full border-orange-900 border-2 rounded-tr-[400px] left-14"></div>
+          <div className="absolute xl:top-10 md:top-6 top-2 h-full w-[25vh] lg:w-[34vh] 2xl:w-[50vh] xl:w-[42vh] border-orange-900 border-2 md:rounded-tr-[400px] 2xl:left-20 xl:left-24 lg:left-8 md:left-10 left-1/2 transform -translate-x-1/2"></div>
         </div>
-        <div className="mt-24 flex flex-col items-end">
-          <h1 className=" md:text-5xl text-orange-900 tracking-wide text-end uppercase w-[40vw]">
-            Me conheça um pouco melhor
+        <div className="mt-24 flex flex-col md:items-end items-center">
+          <h1 className="font-semibold 2xl:text-6xl lg:text-5xl md:text-4xl text-3xl text-orange-900 tracking-normal md:text-end text-center uppercase xl:w-[40vw] lg:w-[50vw] md:w-[55vw] w-[80vw]">
+            Conheça a Mentora que Vai Transformar sua Carreira
           </h1>
-          <h2 className="mt-8 text-2xl text-black w-[30vw] text-end">
+          <h2 className="mt-8 2xl:text-4xl xl:text-3xl lg:text-2xl text-xl text-black 2xl:w-[30vw] xl:w-[32vw] lg:w-[31vw] md:w-[45vw] w-[70vw] md:text-end text-center">
             De anos de experiência no campo para a sala de aula, ela traz o
             conhecimento que você precisa.
           </h2>
           <div className="flex flex-col items-end mt-10">
-            <p className="w-[30vw] text-end text-[18px] text-black">
-              Oi, eu sou [Nome da Vendedora], e minha paixão é ajudar pessoas
-              como você a atingir seu potencial máximo. Com mais de [X] anos de
-              experiência em [Área de Especialização], eu desenvolvi métodos
-              eficazes que já beneficiaram milhares de alunos. Minha missão é
-              proporcionar uma educação de qualidade que seja acessível e
-              prática. Vamos embarcar nessa jornada juntos?
+            <p className="xl:w-[30vw] md:w-[40vw] w-[80vw] text-sm md:text-base xl:text-lg md:text-end text-start text-black">
+              Oi, eu sou Maria, e minha paixão é ajudar pessoas como você a
+              atingir seu potencial máximo. Com mais de 10 anos de experiência,
+              eu desenvolvi métodos eficazes que já beneficiaram milhares de
+              alunos. Minha missão é proporcionar uma educação de qualidade que
+              seja acessível e prática. Vamos embarcar nessa jornada juntos?
             </p>
             <Button variant="profile" className="mt-10">
               Comece Sua Jornada Agora

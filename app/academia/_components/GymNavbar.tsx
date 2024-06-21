@@ -221,7 +221,7 @@ export function GymNavbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild>
+            <Button asChild variant="gym">
               <Link
                 to="#contactSection"
                 spy={true}

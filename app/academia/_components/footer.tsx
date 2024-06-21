@@ -8,7 +8,7 @@ import { IoLocationSharp } from "react-icons/io5";
 
 export function Footer() {
   return (
-    <footer className="relative w-full border-t-[1px] flex items-center justify-center py-6 px-[15vw] bg-zinc-900">
+    <footer className="relative w-full border-t-[1px] flex items-center justify-center py-6 px-[15vw] bg-zinc-900 flex flex-col">
       <div className="grid grid-cols-3 w-full gap-14">
         <div className="flex flex-col">
           <span className="text-2xl text-cyan-500 pb-4">Sua logo aqui</span>
@@ -101,6 +101,9 @@ export function Footer() {
             <p>Rua da Saúde, 123 - Centro, Cidade</p>
           </div>
         </div>
+      </div>
+      <div className="flex items-center pt-8">
+        <p className="text-sm">Desenvolvido por RZanin Dev</p>
       </div>
     </footer>
   );

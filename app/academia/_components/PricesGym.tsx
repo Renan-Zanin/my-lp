@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/card";
 import { VscDebugBreakpointLog } from "react-icons/vsc";
 
-export default function PrizesGym() {
+export default function PricesGym() {
   return (
     <section
       id="#gymPrizes"

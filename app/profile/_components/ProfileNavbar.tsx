@@ -8,10 +8,12 @@ import {
   DrawerClose,
   DrawerContent,
   DrawerHeader,
+  DrawerOverlay,
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { Menu, X } from "lucide-react";
+import { RiMenu4Fill } from "react-icons/ri";
 
 export default function ProfileNavbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -59,7 +61,7 @@ export default function ProfileNavbar() {
           </Button>
           <Button asChild variant="link" className="text-xl">
             <Link
-              to="#aboutSection"
+              to="#profileAbout"
               spy={true}
               smooth={true}
               offset={-110}
@@ -72,20 +74,20 @@ export default function ProfileNavbar() {
           </Button>
           <Button asChild variant="link" className="text-xl">
             <Link
-              to="#benefitsSection"
+              to="#profileModules"
               spy={true}
               smooth={true}
               offset={-110}
               duration={700}
             >
               <span className="hover:border-b-[1px] hover:border-orange-900 cursor-pointer transition-all font-bold text-orange-900">
-                Benefícios
+                Módulos
               </span>
             </Link>
           </Button>
           <Button asChild variant="link" className="text-xl">
             <Link
-              to="#depositionsSection"
+              to="#profileDepositions"
               spy={true}
               smooth={true}
               offset={-110}
@@ -98,14 +100,14 @@ export default function ProfileNavbar() {
           </Button>
           <Button asChild variant="link" className="text-xl">
             <Link
-              to="#portifolioSection"
+              to="#profilePrice"
               spy={true}
               smooth={true}
               offset={-110}
               duration={700}
             >
               <span className="hover:border-b-[1px] hover:border-orange-900 cursor-pointer transition-all font-bold text-orange-900">
-                Portifólio
+                Planos
               </span>
             </Link>
           </Button>
@@ -115,16 +117,18 @@ export default function ProfileNavbar() {
   }
   return (
     <Drawer open={open} onOpenChange={setOpen} direction="left">
+      <DrawerOverlay className="bg-orange-50 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5" />
       <DrawerTrigger asChild className="fixed top-4 left-4 z-50">
         <Button variant="ghost">
-          <Menu size={32} />
+          <RiMenu4Fill size={32} className="text-orange-900" />
         </Button>
       </DrawerTrigger>
-      <DrawerContent className="flex flex-col rounded-r-[10px] h-full w-[70vw] fixed bottom-0 left-0 justify-center">
+      <DrawerContent className="flex flex-col rounded-r-[20vw] h-full w-[70vw] fixed bottom-0 left-0 justify-center bg-white">
+        <div className="absolute bottom-0 h-full w-full border-orange-900 border-2 rounded-r-[20vw] left-1"></div>
         <DrawerHeader>
           <DrawerClose asChild>
-            <Button variant="ghost" className="fixed top-4 right-2">
-              <X size={32} />
+            <Button variant="ghost" className="fixed top-10 right-8">
+              <X size={32} className="text-orange-900" />
             </Button>
           </DrawerClose>
         </DrawerHeader>
@@ -147,7 +151,7 @@ export default function ProfileNavbar() {
           <DrawerClose asChild>
             <Button asChild variant="link" className="text-xl">
               <Link
-                to="#aboutSection"
+                to="#profileAbout"
                 spy={true}
                 smooth={true}
                 offset={-80}
@@ -161,14 +165,14 @@ export default function ProfileNavbar() {
           <DrawerClose asChild>
             <Button asChild variant="link" className="text-xl">
               <Link
-                to="#benefitsSection"
+                to="#profileModules"
                 spy={true}
                 smooth={true}
                 offset={-80}
                 duration={700}
               >
                 <span className="hover:border-b-[1px] hover:border-orange-900 cursor-pointer transition-all font-bold text-orange-900">
-                  Benefícios
+                  Módulos
                 </span>
               </Link>
             </Button>
@@ -176,7 +180,7 @@ export default function ProfileNavbar() {
           <DrawerClose asChild>
             <Button asChild variant="link" className="text-xl">
               <Link
-                to="#depositionsSection"
+                to="#profileDepositions"
                 spy={true}
                 smooth={true}
                 offset={-80}
@@ -191,14 +195,14 @@ export default function ProfileNavbar() {
           <DrawerClose asChild>
             <Button asChild variant="link" className="text-xl">
               <Link
-                to="#portifolioSection"
+                to="#profilePrices"
                 spy={true}
                 smooth={true}
                 offset={-80}
                 duration={700}
               >
                 <span className="hover:border-b-[1px] hover:border-orange-900 cursor-pointer transition-all font-bold text-orange-900">
-                  Portifólio
+                  Planos
                 </span>
               </Link>
             </Button>
