@@ -12,6 +12,10 @@ import {
 import { Headset, Settings, TabletSmartphone } from "lucide-react";
 import Link from "next/link";
 import ScrollAnimation from "react-animate-on-scroll";
+import Corte from "/public/corte-mockup.png";
+import Profile from "/public/profile-mockup.png";
+import Gym from "/public/gym-mockup.png";
+import Image from "next/image";
 
 export default function PortifolioSection() {
   return (
@@ -50,51 +54,38 @@ export default function PortifolioSection() {
             trazer sua visão à vida.
           </p>
 
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-10 md:mb-24 mb-20">
-            <Link href="/academia">
-              <ScrollAnimation
-                animateIn="bounceInUp"
-                animateOut="fadeOut"
-                delay={600}
-                duration={1.8}
-                animateOnce={true}
-              >
-                <Card className="md:order-1 order-3 flex flex-col items-center px-4 py-8 bg-blue-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-[0.025]">
-                  <CardHeader className="flex flex-col items-center">
-                    <CardTitle>
-                      <Settings size={38} className="text-blue-500" />
-                    </CardTitle>
-                    <CardDescription>Total Personalização</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="w-[250px] md:text-start text-center">
-                      Ofereço total personalização em minhas soluções, adaptando
-                      cada elemento para refletir a identidade da sua empresa.
-                    </p>
-                  </CardContent>
-                </Card>
-              </ScrollAnimation>
-            </Link>
-
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:mb-24 mb-20">
             <ScrollAnimation
               animateIn="bounceInUp"
               animateOut="fadeOut"
-              delay={300}
+              delay={600}
               duration={1.8}
               animateOnce={true}
             >
-              <Card className="order-2 flex flex-col items-center px-4 py-8 bg-blue-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-[0.025]">
+              <Card className="md:order-1 order-3 flex flex-col items-center px-2 py-4 bg-blue-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-[0.025]">
                 <CardHeader className="flex flex-col items-center">
                   <CardTitle>
-                    <Headset size={38} className="text-blue-500" />
+                    <Image
+                      src={Corte}
+                      alt="mockup corte"
+                      className="w-[25vw] object-contain"
+                    />
                   </CardTitle>
-                  <CardDescription>Suporte Contínuo</CardDescription>
+                  <CardDescription>Evento Corte</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <p className="w-[250px] md:text-start text-center">
-                    Estou sempre disponível para garantir que sua presença
-                    online evolua conforme as necessidades do seu negócio.
+                <CardContent className="w-[25vw]">
+                  <p className="md:text-start text-center">
+                    Projeto realizado em parceria para o Evento Corte - Homens
+                    de Negócios que será realizado por grandes players do
+                    mercado digital, com landing page e outras páginas do funil
+                    de vendas.
                   </p>
+                  <Link
+                    href="https://homensdenegocios.cortevisagismo.com.br/"
+                    target="_blank"
+                  >
+                    <Button className="mt-6 w-full">Visite a página</Button>
+                  </Link>
                 </CardContent>
               </Card>
             </ScrollAnimation>
@@ -102,21 +93,62 @@ export default function PortifolioSection() {
             <ScrollAnimation
               animateIn="bounceInUp"
               animateOut="fadeOut"
+              delay={600}
               duration={1.8}
               animateOnce={true}
             >
-              <Card className="md:order-3 order-1 flex flex-col items-center px-4 py-8 bg-blue-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-[0.025]">
+              <Card className="md:order-1 order-3 flex flex-col items-center px-2 py-4 bg-blue-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-[0.025]">
                 <CardHeader className="flex flex-col items-center">
                   <CardTitle>
-                    <TabletSmartphone size={38} className="text-blue-500" />
+                    <Image
+                      src={Profile}
+                      alt="mockup transforme sua carreira"
+                      className="w-[25vw] object-contain"
+                    />
                   </CardTitle>
-                  <CardDescription>Responsividade Total</CardDescription>
+                  <CardDescription>Transforme Sua Carreira</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <p className="w-[250px] md:text-start text-center">
-                    Minhas páginas se adaptam a qualquer dispositivo, garantindo
-                    uma experiência consistente para todos os seus clientes.
+                <CardContent className="w-[25vw]">
+                  <p className="md:text-start text-center">
+                    Página projetada para capturar a atenção de profissionais em
+                    busca de crescimento na carreira, fornecer informações
+                    detalhadas sobre o curso e a mentora e incentivar a
+                    inscrição.
                   </p>
+                  <Link href="/profile" target="_blank">
+                    <Button className="mt-6 w-full">Visite a página</Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="bounceInUp"
+              animateOut="fadeOut"
+              delay={600}
+              duration={1.8}
+              animateOnce={true}
+            >
+              <Card className="md:order-1 order-3 flex flex-col items-center px-2 py-4 bg-blue-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-[0.025]">
+                <CardHeader className="flex flex-col items-center">
+                  <CardTitle>
+                    <Image
+                      src={Gym}
+                      alt="mockup academia"
+                      className="w-[25vw] object-contain"
+                    />
+                  </CardTitle>
+                  <CardDescription>Academia</CardDescription>
+                </CardHeader>
+                <CardContent className="w-[25vw]">
+                  <p className="md:text-start text-center">
+                    Landing Page projetada para promover uma academia moderna e
+                    acolhedora, voltada para pessoas que ainda não conhecem os
+                    serviços oferecidos, com intenção de manter o visitante
+                    interessado, gerar desejo e incentivar a ação de inscrição.
+                  </p>
+                  <Link href="/academia" target="_blank">
+                    <Button className="mt-6 w-full">Visite a página</Button>
+                  </Link>
                 </CardContent>
               </Card>
             </ScrollAnimation>

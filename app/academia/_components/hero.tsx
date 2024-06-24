@@ -9,7 +9,7 @@ export default function HeroGym() {
       id="#gymHero"
       className="relative min-h-screen flex items-center justify-start bg-cover lg:bg-[url('/bg-gym.jpg')] md:bg-[url('/bg-gym-md.jpg')] bg-[url('/bg-gym-sm.jpg')] overflow-hidden object-contain"
     >
-      <div className=" absolute z-10 right-2 w-[180vw] h-full w-[200px] h-[200px] bg-gradient-to-tr from-neutral-900 to-black rounded-full filter blur-[80px] opacity-80"></div>
+      <div className=" absolute z-10 right-2 md:w-[180vw] h-full w-[200px] bg-gradient-to-tr from-neutral-900 to-black rounded-full filter blur-[80px] opacity-80"></div>
       <div className="flex flex-col items-start justify-center relative z-20 pl-[10vw]">
         <h1 className="2xl:text-[70px] xl:text-6xl md:text-5xl text-4xl text-white font-bold leading-tight mb-0 uppercase">
           Transforme seu <span className="text-cyan-500">corpo</span>,
