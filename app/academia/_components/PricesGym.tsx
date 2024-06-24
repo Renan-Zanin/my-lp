@@ -15,18 +15,18 @@ import { VscDebugBreakpointLog } from "react-icons/vsc";
 export default function PricesGym() {
   return (
     <section
-      id="#gymPrizes"
-      className="relative pb-16 w-[99.6vw] flex justify-center pl-[15vw] pr-[15vw] bg-black"
+      id="#gymPrices"
+      className="relative pb-16 flex justify-center 2xl:px-[15vw] lg:px-[10vw] px-[5vw] bg-black"
     >
       <div className="mt-24 flex flex-col items-center w-full">
-        <h1 className=" md:text-5xl text-white tracking-wide text-center uppercase w-[40vw]">
+        <h1 className="xl:text-5xl md:text-4xl text-3xl text-white tracking-wide text-center uppercase 2xl:w-[40vw] lg:w-[55vw] md:w-[70vw] w-[80vw]">
           Planos Flexíveis para Todos os Estilos de Vida
         </h1>
-        <h2 className="mt-8 text-2xl text-gray-300 mb-8">
+        <h2 className="mt-8 md:text-2xl text-xl text-center text-gray-300 mb-8">
           Escolha o plano perfeito para você e comece hoje mesmo
         </h2>
-        <div className="grid grid-cols-3 gap-8 mt-6">
-          <Card className="flex flex-col bg-white border-none shadow-none items-center justify-center w-[20vw] mt-10">
+        <div className="grid lg:grid-cols-3 xl:gap-8 gap-4 justify-center mt-6 md:w-full w-[80vw]">
+          <Card className="flex flex-col bg-white border-none shadow-none items-center justify-center w-full mt-10 lg:order-1 order-2">
             <CardHeader>
               <CardTitle>
                 <p className="bg-black p-1 text-center text-xs mt-4 mb-[-16px]">
@@ -73,7 +73,7 @@ export default function PricesGym() {
               <Button variant="gym">Junte-se agora</Button>
             </CardFooter>
           </Card>
-          <Card className="flex flex-col bg-rose-600 border-none shadow-none mb-10 items-center justify-center w-[20vw] ">
+          <Card className="flex flex-col bg-rose-600 border-none shadow-none lg:mb-10 items-center justify-center w-full lg:order-2 order-1">
             <CardHeader>
               <CardTitle>
                 <p className="bg-black p-1 text-center text-xs mt-0 mb-[-16px]">
@@ -122,7 +122,7 @@ export default function PricesGym() {
               </Button>
             </CardFooter>
           </Card>
-          <Card className="flex flex-col bg-white border-none shadow-none items-center justify-center w-[20vw] mt-10">
+          <Card className="flex flex-col bg-white border-none shadow-none items-center justify-center w-full mt-10 order-3">
             <CardHeader>
               <CardTitle>
                 <p className="bg-black p-1 text-center text-xs mt-4 mb-[-16px]">
@@ -171,7 +171,7 @@ export default function PricesGym() {
           </Card>
         </div>
       </div>
-      <div className="absolute z-[10] left-1/2 top-72 transform -translate-x-1/2 md:w-[550px] md:h-[450px] w-[300px] h-[200px] bg-gradient-to-br from-rose-500 to-rose-600 rounded-full shadow-lg filter blur-[75px] opacity-10" />
+      <div className="absolute -z-[10] left-1/2 top-72 transform -translate-x-1/2 md:w-[550px] md:h-[450px] w-[300px] h-[200px] bg-gradient-to-br from-rose-500 to-rose-600 rounded-full shadow-lg filter blur-[75px] opacity-10" />
     </section>
   );
 }

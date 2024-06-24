@@ -9,13 +9,13 @@ import {
 
 export default function DepositionsCard() {
   return (
-    <Card className="flex flex-col bg-black border-none shadow-none items-center justify-center w-[20vw]">
+    <Card className="flex flex-col bg-black border-none shadow-none items-center justify-center xl:w-[20vw] lg:w-[30vw] md:w-[40vw] w-[70vw]">
       <CardHeader>
         <CardTitle>
           <img
             src="./deposition.jpg"
             alt=""
-            className="w-24 h-24 rounded-full"
+            className="md:w-24 md:h-24 w-20 h-20 rounded-full"
           />
         </CardTitle>
         <CardDescription className="text-white text-center">
@@ -25,9 +25,9 @@ export default function DepositionsCard() {
       </CardHeader>
       <CardContent>
         <p>
-          Nunca me senti tão bem como desde que comecei a treinar aqui. Os
+          &quot;Nunca me senti tão bem como desde que comecei a treinar aqui. Os
           instrutores são incríveis e sempre me ajudam a alcançar meus
-          objetivos.
+          objetivos.&quot;
         </p>
       </CardContent>
     </Card>

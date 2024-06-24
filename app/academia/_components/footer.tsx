@@ -8,8 +8,8 @@ import { IoLocationSharp } from "react-icons/io5";
 
 export function Footer() {
   return (
-    <footer className="relative w-full border-t-[1px] flex items-center justify-center py-6 px-[15vw] bg-zinc-900 flex flex-col">
-      <div className="grid grid-cols-3 w-full gap-14">
+    <footer className="relative border-t-[1px] flex items-center justify-center py-6 2xl:px-[15vw] lg:px-[10vw] px-[5vw] bg-zinc-900 flex-col">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-14 xl:gap-8 gap-4">
         <div className="flex flex-col">
           <span className="text-2xl text-cyan-500 pb-4">Sua logo aqui</span>
           <p className="text-sm mb-6">
@@ -23,8 +23,7 @@ export function Footer() {
             <FaInstagram size={24} className="text-rose-600" />
           </div>
         </div>
-        <div className="flex flex-col">
-          <h1 className="font-bold mb-6">Sobre</h1>
+        <div className="flex flex-col items-start md:items-center">
           <Link
             to="#gymHero"
             spy={true}

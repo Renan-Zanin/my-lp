@@ -6,18 +6,18 @@ export default function FacilitiesGym() {
   return (
     <section
       id="#gymFacilities"
-      className="relative pb-16 w-[99.6vw] flex pl-[15vw] pr-[15vw] bg-black overflow-hidden"
+      className="relative pb-16 flex pl-[15vw] pr-[15vw] bg-black overflow-hidden"
     >
       <div className="mt-24 flex flex-col items-center w-full">
-        <h1 className=" md:text-5xl text-white tracking-wide text-center uppercase w-[40vw]">
+        <h1 className="xl:text-5xl md:text-4xl text-3xl text-white tracking-wide text-center uppercase 2xl:w-[40vw] lg:w-[50vw] w-[60vw]">
           Instalações modernas e confortáveis
         </h1>
-        <h2 className="mt-8 text-2xl text-gray-300">
+        <h2 className="mt-8 md:text-2xl text-xl text-center text-gray-300">
           Tudo para o seu conforto e bem-estar
         </h2>
-        <div className="flex flex-row justify-between items-center mt-8 w-full">
-          <div className="w-[25vw]">
-            <p className="text-start text-[18px]">
+        <div className="flex xl:flex-row flex-col-reverse justify-between items-center mt-8 w-full">
+          <div className="xl:w-[30vw] lg:w-[50vw] md:w-[60vw] w-[70vw] mt-20 xl:mt-0">
+            <p className="text-start lg:text-lg text-base">
               Nossa academia oferece instalações de primeira linha para garantir
               que você tenha a melhor experiência possível. Desde amplas salas
               de musculação e estúdios para aulas em grupo até áreas de
@@ -32,7 +32,6 @@ export default function FacilitiesGym() {
           <FacilitiesCarrousel />
         </div>
       </div>
-      {/* <div className="absolute z-[10] bottom-[-100px] left-[-200px] md:w-[550px] md:h-[450px] w-[300px] h-[200px] bg-gradient-to-br from-rose-500 to-amber-500 rounded-full shadow-lg filter blur-[75px] opacity-10" /> */}
     </section>
   );
 }

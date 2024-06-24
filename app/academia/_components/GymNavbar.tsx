@@ -19,7 +19,7 @@ import { Menu, X } from "lucide-react";
 export function GymNavbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,8 +40,8 @@ export function GymNavbar() {
   if (isDesktop) {
     return (
       <nav className="absolute top-0 w-[80vw] z-50 flex flex-row items-center justify-center py-4 bg-neutral-800 rounded-full mt-4">
-        <div className="flex gap-x-2">
-          <Button asChild variant="link" className="text-xl">
+        <div className="flex xl:gap-x-2 gap-x-1">
+          <Button asChild variant="link" className="xl:text-xl text-lg">
             <Link
               to="#gymHero"
               spy={true}
@@ -52,7 +52,7 @@ export function GymNavbar() {
               <span className="sublinhado-gradiente font-semibold">Home</span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="text-xl">
+          <Button asChild variant="link" className="xl:text-xl text-lg">
             <Link
               to="#gymAbout"
               spy={true}
@@ -63,7 +63,7 @@ export function GymNavbar() {
               <span className="sublinhado-gradiente font-semibold">Sobre</span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="text-xl">
+          <Button asChild variant="link" className="xl:text-xl text-lg">
             <Link
               to="#gymClasses"
               spy={true}
@@ -74,7 +74,7 @@ export function GymNavbar() {
               <span className="sublinhado-gradiente font-semibold">Aulas</span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="text-xl">
+          <Button asChild variant="link" className="xl:text-xl text-lg">
             <Link
               to="#gymFacilities"
               spy={true}
@@ -87,7 +87,7 @@ export function GymNavbar() {
               </span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="text-xl">
+          <Button asChild variant="link" className="xl:text-xl text-lg">
             <Link
               to="#gymDepositions"
               spy={true}
@@ -100,9 +100,9 @@ export function GymNavbar() {
               </span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="text-xl">
+          <Button asChild variant="link" className="xl:text-xl text-lg">
             <Link
-              to="#gymPrizes"
+              to="#gymPrices"
               spy={true}
               smooth={true}
               offset={-110}
@@ -123,7 +123,7 @@ export function GymNavbar() {
               smooth={true}
               offset={-110}
               duration={700}
-              className="text-foreground ml-10 text-black"
+              className="text-foreground xl:ml-10 ml-4 text-black"
             >
               <p className="text-black">Comece agora!</p>
             </Link>
@@ -139,7 +139,7 @@ export function GymNavbar() {
           <Menu size={32} />
         </Button>
       </DrawerTrigger>
-      <DrawerContent className="flex flex-col rounded-r-[10px] h-full w-[70vw] fixed bottom-0 left-0 justify-center">
+      <DrawerContent className="flex flex-col rounded-r-3xl h-full w-[70vw] md:w-[50vw] fixed bottom-0 left-0 justify-center bg-black">
         <DrawerHeader>
           <DrawerClose asChild>
             <Button variant="ghost" className="fixed top-4 right-2">
@@ -151,7 +151,7 @@ export function GymNavbar() {
           <DrawerClose asChild>
             <Button asChild variant="link" className="text-xl">
               <Link
-                to="#heroSection"
+                to="#gymHero"
                 spy={true}
                 smooth={true}
                 offset={-80}
@@ -164,7 +164,7 @@ export function GymNavbar() {
           <DrawerClose asChild>
             <Button asChild variant="link" className="text-xl">
               <Link
-                to="#aboutSection"
+                to="#gymAbout"
                 spy={true}
                 smooth={true}
                 offset={-80}
@@ -178,14 +178,14 @@ export function GymNavbar() {
           <DrawerClose asChild>
             <Button asChild variant="link" className="text-xl">
               <Link
-                to="#benefitsSection"
+                to="#gymClasses"
                 spy={true}
                 smooth={true}
                 offset={-80}
                 duration={700}
               >
                 <span className="sublinhado-gradiente font-semibold">
-                  Benefícios
+                  Aulas
                 </span>
               </Link>
             </Button>
@@ -193,7 +193,22 @@ export function GymNavbar() {
           <DrawerClose asChild>
             <Button asChild variant="link" className="text-xl">
               <Link
-                to="#depositionsSection"
+                to="#gymFacilities"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={700}
+              >
+                <span className="sublinhado-gradiente font-semibold">
+                  Instalações
+                </span>
+              </Link>
+            </Button>
+          </DrawerClose>
+          <DrawerClose asChild>
+            <Button asChild variant="link" className="text-xl">
+              <Link
+                to="#gymDepositions"
                 spy={true}
                 smooth={true}
                 offset={-80}
@@ -208,14 +223,14 @@ export function GymNavbar() {
           <DrawerClose asChild>
             <Button asChild variant="link" className="text-xl">
               <Link
-                to="#portifolioSection"
+                to="#gymPrices"
                 spy={true}
                 smooth={true}
                 offset={-80}
                 duration={700}
               >
                 <span className="sublinhado-gradiente font-semibold">
-                  Portifólio
+                  Planos
                 </span>
               </Link>
             </Button>
@@ -228,7 +243,7 @@ export function GymNavbar() {
                 smooth={true}
                 offset={-80}
                 duration={700}
-                className="text-foreground ml-10"
+                className="text-black ml-10"
               >
                 Comece agora!
               </Link>

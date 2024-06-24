@@ -8,19 +8,19 @@ export default function DespositionsGym() {
   return (
     <section
       id="#gymDepositions"
-      className="relative pb-16 w-[99.6vw] flex justify-end pl-[15vw] pr-[15vw] bg-zinc-900"
+      className="relative pb-16 w-[99.6vw] flex justify-end 2xl:px-[15vw] lg:px-[10vw] px-[5vw] bg-zinc-900"
     >
-      <div className="mt-24 flex flex-col items-end w-full">
-        <h1 className=" md:text-5xl text-white tracking-wide text-end uppercase w-[40vw]">
+      <div className="mt-24 flex flex-col lg:items-end items-center w-full">
+        <h1 className="xl:text-5xl md:text-4xl text-3xl text-white tracking-wide lg:text-end text-center uppercase 2xl:w-[40vw] xl:w-[50vw] w-[67vw]">
           Histórias de Sucesso que Inspiram
         </h1>
-        <h2 className="mt-8 text-2xl text-gray-300 mb-8">
+        <h2 className="mt-8 md:text-2xl text-xl md:text-end text-center text-gray-300 mb-8 md:w-full w-[70vw]">
           Veja o que nossos membros têm a dizer
         </h2>
-        <div className="flex flex-row items-center justify-between gap-20 w-full">
+        <div className="flex lg:flex-row flex-col-reverse items-center justify-between gap-20 w-full">
           <DepositionsCard />
           <div className="flex flex-col items-end">
-            <p className="w-[30vw] text-end text-[18px]">
+            <p className="xl:w-[30vw] lg:w-[40vw] md:w-[60vw] w-[75vw] lg:text-end lg:text-lg text-base">
               Na nossa academia, acreditamos que os resultados falam por si. Não
               há melhor forma de entender o impacto positivo que podemos ter na
               sua vida do que ouvir diretamente de quem já trilhou esse caminho.
@@ -36,7 +36,6 @@ export default function DespositionsGym() {
           </div>
         </div>
       </div>
-      {/* <div className="absolute z-[10] top-0 left-0 md:w-[550px] md:h-[450px] w-[300px] h-[200px] bg-gradient-to-br from-rose-500 to-amber-500 rounded-full shadow-lg filter blur-[75px] opacity-10" /> */}
     </section>
   );
 }

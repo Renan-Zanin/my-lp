@@ -13,7 +13,7 @@ import Autoplay from "embla-carousel-autoplay";
 export default function ClassesCarrousel() {
   return (
     <Carousel
-      className="w-full h-[550px] mt-14 relative flex items-center justify-center"
+      className="md:w-[75vw] w-[70vw] lg:w-full md:h-[600px] h-[450px] relative flex items-center justify-center"
       opts={{
         align: "start",
         loop: true,
@@ -25,7 +25,7 @@ export default function ClassesCarrousel() {
         }),
       ]}
     >
-      <CarouselContent className="-ml-4 h-[550px] w-full mt-32">
+      <CarouselContent className="-ml-4 md:h-[600px] h-[450px] w-full items-center">
         <CarouselItem className="pl-4 overflow-visible basis-auto">
           <ClassesCard type="Força" exercise="Musculação" />
         </CarouselItem>

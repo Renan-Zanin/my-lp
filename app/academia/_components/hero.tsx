@@ -7,17 +7,17 @@ export default function HeroGym() {
   return (
     <section
       id="#gymHero"
-      className="relative min-h-screen w-[99.6vw] flex items-center h-screen justify-start bg-cover bg-[url('/bg-gym.jpg')] overflow-hidden"
+      className="relative min-h-screen flex items-center justify-start bg-cover lg:bg-[url('/bg-gym.jpg')] md:bg-[url('/bg-gym-md.jpg')] bg-[url('/bg-gym-sm.jpg')] overflow-hidden object-contain"
     >
-      <div className=" absolute z-10 right-2 md:w-[180vw] md:h-full w-[200px] h-[200px] bg-gradient-to-tr from-neutral-900 to-black rounded-full filter blur-[80px] opacity-80"></div>
+      <div className=" absolute z-10 right-2 w-[180vw] h-full w-[200px] h-[200px] bg-gradient-to-tr from-neutral-900 to-black rounded-full filter blur-[80px] opacity-80"></div>
       <div className="flex flex-col items-start justify-center relative z-20 pl-[10vw]">
-        <h1 className="md:text-[70px] text-3xl text-white font-bold leading-tight mb-0 uppercase">
+        <h1 className="2xl:text-[70px] xl:text-6xl md:text-5xl text-4xl text-white font-bold leading-tight mb-0 uppercase">
           Transforme seu <span className="text-cyan-500">corpo</span>,
         </h1>
-        <h1 className="md:text-[70px] text-3xl text-white font-bold leading-tight mb-5 uppercase ">
+        <h1 className="2xl:text-[70px] xl:text-6xl md:text-5xl text-4xl text-white font-bold leading-tight mb-5 uppercase ">
           Transforme sua <span className="text-rose-600">mente</span>
         </h1>
-        <span className="md:text-4xl text-xl font-light md:mb-16 mb-10 w-[40vw]">
+        <span className="2xl:text-4xl xl:text-3xl md:text-2xl text-xl font-light md:mb-16 mb-10 2xl:w-[40vw] lg:w-[60vw] w-[80vw]">
           Descubra um ambiente motivador com equipamentos de última geração e
           treinadores dedicados
         </span>

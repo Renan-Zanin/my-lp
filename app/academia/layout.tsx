@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function GymLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className={exo.className}>
-      <div className="flex items-center justify-center bg-neutral-900 w-full">
+      <div className="flex items-center justify-center bg-neutral-900">
         <GymNavbar />
         {children}
       </div>
