@@ -10,9 +10,10 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 import ScrollAnimation from "react-animate-on-scroll";
-import Corte from "/public/corte-mockup.png";
-import Profile from "/public/profile-mockup.png";
-import Gym from "/public/gym-mockup.png";
+import Corte from "/public/corte-mockup.avif";
+import Profile from "/public/profile-mockup.avif";
+import Gym from "/public/gym-mockup.avif";
+import Mercantil from "/public/mockup-mercantil.avif";
 import Image from "next/image";
 
 export default function PortifolioSection() {
@@ -92,6 +93,43 @@ export default function PortifolioSection() {
                 </CardContent>
               </Card>
             </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="bounceInUp"
+              animateOut="fadeOut"
+              delay={600}
+              duration={1.8}
+              animateOnce={true}
+            >
+              <Card className="md:order-1 order-3 flex flex-col items-center px-2 py-4 bg-blue-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-[0.025]">
+                <CardHeader className="flex flex-col items-center">
+                  <CardTitle>
+                    <Image
+                      src={Mercantil}
+                      alt="mockup corte"
+                      className="w-[25vw] object-contain"
+                    />
+                  </CardTitle>
+                  <CardDescription>Mercantil CRM</CardDescription>
+                </CardHeader>
+                <CardContent className="w-[30vw]">
+                  <p className="md:text-start text-center">
+                    Web aplicação customizada para um comércio local, focada na
+                    gestão de clientes e controle de inadimplências. Esta
+                    solução visa otimizar a administração de contas, melhorando
+                    o acompanhamento de clientes em atraso e facilitando a
+                    tomada de decisões financeiras
+                  </p>
+                  <Link href="https://crm-mercantil.vercel.app" target="_blank">
+                    <Button
+                      className="mt-6 w-full"
+                      aria-label="Visite a página corte visagismo"
+                    >
+                      Visite a página
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            </ScrollAnimation>
 
             <ScrollAnimation
               animateIn="bounceInUp"
@@ -147,7 +185,7 @@ export default function PortifolioSection() {
                   </CardTitle>
                   <CardDescription>Academia</CardDescription>
                 </CardHeader>
-                <CardContent className="w-[25vw]">
+                <CardContent className="w-[28vw]">
                   <p className="md:text-start text-center">
                     Landing Page projetada para promover uma academia moderna e
                     acolhedora, voltada para pessoas que ainda não conhecem os

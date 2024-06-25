@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import AboutImage from "@/assets/profile.png";
+import AboutImage from "@/assets/profile.avif";
 import Image from "next/image";
 import {
   FaHtml5,
