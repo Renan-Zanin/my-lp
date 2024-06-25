@@ -140,7 +140,9 @@ export default function ContactForm() {
                   </FormItem>
                 )}
               />
-              <Button type="submit">Enviar</Button>
+              <Button type="submit" aria-label="Enviar formulário">
+                Enviar
+              </Button>
             </form>
           </Form>
         </div>

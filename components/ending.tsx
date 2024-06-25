@@ -25,7 +25,7 @@ export default function EndingSection() {
             jornada rumo ao sucesso digital. Estamos ansiosos para trabalhar com
             você!
           </p>
-          <Button>Aproveite a Oferta!</Button>
+          <Button aria-label="Aproveite a oferta">Aproveite a Oferta!</Button>
         </div>
       </div>
     </section>

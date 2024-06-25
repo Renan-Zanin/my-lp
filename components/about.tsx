@@ -65,7 +65,12 @@ export default function AboutSection() {
               não apenas atendam às necessidades do cliente, mas também superem
               suas expectativas.
             </p>
-            <Button className="z-20 md:mb-0 mb-10">Saiba Mais Detalhes!</Button>
+            <Button
+              className="z-20 md:mb-0 mb-10"
+              aria-label="Saiba mais detalhes"
+            >
+              Saiba Mais Detalhes!
+            </Button>
           </div>
         </ScrollAnimation>
       </div>

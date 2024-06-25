@@ -113,7 +113,9 @@ export default function BenefitsSection() {
             </ScrollAnimation>
           </div>
 
-          <Button className="z-10">Veja Todos os Benefícios!</Button>
+          <Button className="z-10" aria-label="Veja todos os benefícios">
+            Veja Todos os Benefícios!
+          </Button>
         </div>
       </div>
     </section>

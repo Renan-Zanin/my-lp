@@ -44,7 +44,7 @@ export default function Navbar() {
         }`}
       >
         <div className="flex gap-x-2">
-          <Button asChild variant="link" className="text-xl">
+          <Button asChild variant="link" className="text-xl" aria-label="Home">
             <Link
               to="#heroSection"
               spy={true}
@@ -55,7 +55,7 @@ export default function Navbar() {
               <span className="sublinhado-gradiente font-semibold">Home</span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="text-xl">
+          <Button asChild variant="link" className="text-xl" aria-label="Sobre">
             <Link
               to="#aboutSection"
               spy={true}
@@ -66,7 +66,12 @@ export default function Navbar() {
               <span className="sublinhado-gradiente font-semibold">Sobre</span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="text-xl">
+          <Button
+            asChild
+            variant="link"
+            className="text-xl"
+            aria-label="Benefícios"
+          >
             <Link
               to="#benefitsSection"
               spy={true}
@@ -79,7 +84,12 @@ export default function Navbar() {
               </span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="text-xl">
+          <Button
+            asChild
+            variant="link"
+            className="text-xl"
+            aria-label="Depoimentos"
+          >
             <Link
               to="#depositionsSection"
               spy={true}
@@ -92,7 +102,12 @@ export default function Navbar() {
               </span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="text-xl">
+          <Button
+            asChild
+            variant="link"
+            className="text-xl"
+            aria-label="Portifólio"
+          >
             <Link
               to="#portifolioSection"
               spy={true}
@@ -106,7 +121,7 @@ export default function Navbar() {
             </Link>
           </Button>
 
-          <Button asChild>
+          <Button asChild aria-label="Comece agora">
             <Link
               to="#contactSection"
               spy={true}
@@ -125,21 +140,30 @@ export default function Navbar() {
   return (
     <Drawer open={open} onOpenChange={setOpen} direction="left">
       <DrawerTrigger asChild className="fixed top-4 left-4 z-50">
-        <Button variant="ghost">
+        <Button variant="ghost" aria-label="Abrir menu">
           <Menu size={32} />
         </Button>
       </DrawerTrigger>
       <DrawerContent className="flex flex-col rounded-r-[10px] h-full w-[70vw] fixed bottom-0 left-0 justify-center">
         <DrawerHeader>
           <DrawerClose asChild>
-            <Button variant="ghost" className="fixed top-4 right-2">
+            <Button
+              variant="ghost"
+              className="fixed top-4 right-2"
+              aria-label="Fechar Menu"
+            >
               <X size={32} />
             </Button>
           </DrawerClose>
         </DrawerHeader>
         <div className="flex flex-col items-start gap-y-8">
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Home"
+            >
               <Link
                 to="#heroSection"
                 spy={true}
@@ -152,7 +176,12 @@ export default function Navbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Sobre"
+            >
               <Link
                 to="#aboutSection"
                 spy={true}
@@ -166,7 +195,12 @@ export default function Navbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Benefícios"
+            >
               <Link
                 to="#benefitsSection"
                 spy={true}
@@ -181,7 +215,12 @@ export default function Navbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Depoimentos"
+            >
               <Link
                 to="#depositionsSection"
                 spy={true}
@@ -196,7 +235,12 @@ export default function Navbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Portifólio"
+            >
               <Link
                 to="#portifolioSection"
                 spy={true}
@@ -211,7 +255,7 @@ export default function Navbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild>
+            <Button asChild aria-label="Comece agora">
               <Link
                 to="#contactSection"
                 spy={true}

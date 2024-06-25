@@ -82,7 +82,12 @@ export default function PortifolioSection() {
                     href="https://homensdenegocios.cortevisagismo.com.br/"
                     target="_blank"
                   >
-                    <Button className="mt-6 w-full">Visite a página</Button>
+                    <Button
+                      className="mt-6 w-full"
+                      aria-label="Visite a página corte visagismo"
+                    >
+                      Visite a página
+                    </Button>
                   </Link>
                 </CardContent>
               </Card>
@@ -114,7 +119,12 @@ export default function PortifolioSection() {
                     inscrição.
                   </p>
                   <Link href="/profile" target="_blank">
-                    <Button className="mt-6 w-full">Visite a página</Button>
+                    <Button
+                      className="mt-6 w-full"
+                      aria-label="Visite a página transforme sua carreira"
+                    >
+                      Visite a página
+                    </Button>
                   </Link>
                 </CardContent>
               </Card>
@@ -145,14 +155,17 @@ export default function PortifolioSection() {
                     interessado, gerar desejo e incentivar a ação de inscrição.
                   </p>
                   <Link href="/academia" target="_blank">
-                    <Button className="mt-6 w-full">Visite a página</Button>
+                    <Button
+                      className="mt-6 w-full"
+                      aria-label="Visite a página academia"
+                    >
+                      Visite a página
+                    </Button>
                   </Link>
                 </CardContent>
               </Card>
             </ScrollAnimation>
           </div>
-
-          <Button className="z-10">Veja Todos os Benefícios!</Button>
         </div>
       </div>
     </section>
