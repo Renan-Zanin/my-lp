@@ -13,7 +13,7 @@ export default function DepositionsCard() {
       <CardHeader>
         <CardTitle>
           <img
-            src="./deposition.jpg"
+            src="./deposition.webp"
             alt=""
             className="md:w-24 md:h-24 w-20 h-20 rounded-full"
           />

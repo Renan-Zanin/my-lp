@@ -32,7 +32,7 @@ export default function AboutGym() {
           </div>
           <div className="flex md:flex-row flex-col items-center justify-center gap-4">
             <div className=" relative z-20 h-[38vh] w-[30vh] bg-black rounded-3xl md:mt-20 mt-6 md:order-1 order-2">
-              <div className="absolute z-30 h-[38vh] w-[30vh] bg-cover bg-[url('/card-4.jpg')] bottom-0 right-0 rounded-3xl" />
+              <div className="absolute z-30 h-[38vh] w-[30vh] bg-cover bg-[url('/card-4.webp')] bottom-0 right-0 rounded-3xl" />
             </div>
             <div className=" relative z-20 h-[38vh] w-[30vh] bg-rose-600 rounded-3xl md:order-2 order-1">
               <div className="absolute z-30 h-[48vh] w-[30vh] bg-cover bg-[url('/card-2.png')] bottom-0 right-0 rounded-3xl" />

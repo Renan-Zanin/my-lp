@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image, { StaticImageData } from "next/image";
-import DepositionImage from "/public/deposition.jpg";
+import DepositionImage from "/public/deposition.webp";
 import { IoMdStar } from "react-icons/io";
 
 interface DepositionsCardProps {

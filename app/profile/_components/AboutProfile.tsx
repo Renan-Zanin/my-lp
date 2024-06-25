@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import React from "react";
-import ProfileImage from "/public/profile-2.jpg";
+import ProfileImage from "/public/profile-2.webp";
 import Image from "next/image";
 
 export default function AboutProfile() {

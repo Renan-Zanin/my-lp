@@ -28,7 +28,7 @@ export default function FacilitiesCarrousel() {
         <CarouselItem className="overflow-visible basis-auto">
           <div className="relative group z-20 md:h-[40vh] h-[30vh] xl:w-[25vw] lg:w-[35vw] w-[50vw] rounded-3xl flex flex-col p-4 items-center justify-center ">
             <div
-              className={`absolute z-40 md:h-[40vh] h-[30vh] xl:w-[25vw] lg:w-[35vw] w-[50vw] bg-cover bg-[url('/facilitie-1.jpg')] bottom-0 right-0 rounded-3xl overflow-hidden`}
+              className={`absolute z-40 md:h-[40vh] h-[30vh] xl:w-[25vw] lg:w-[35vw] w-[50vw] bg-cover bg-[url('/facilitie-1.webp')] bottom-0 right-0 rounded-3xl overflow-hidden`}
             >
               <div className="absolute z-30 bottom-0 left-0 md:w-[25vw] md:h-[38vh] w-[15vw] h-[20vh] bg-gradient-to-br from-black to-black rounded-full filter blur-[80px] opacity-60" />
             </div>
@@ -42,7 +42,7 @@ export default function FacilitiesCarrousel() {
         <CarouselItem className="overflow-visible basis-auto">
           <div className="relative group z-20 md:h-[40vh] h-[30vh] xl:w-[25vw] lg:w-[35vw] w-[50vw] rounded-3xl flex flex-col p-4 items-center justify-center ">
             <div
-              className={`absolute z-40 md:h-[40vh] h-[30vh] xl:w-[25vw] lg:w-[35vw] w-[50vw] bg-cover bg-[url('/facilitie-2.jpg')] bottom-0 right-0 rounded-3xl overflow-hidden`}
+              className={`absolute z-40 md:h-[40vh] h-[30vh] xl:w-[25vw] lg:w-[35vw] w-[50vw] bg-cover bg-[url('/facilitie-2.webp')] bottom-0 right-0 rounded-3xl overflow-hidden`}
             >
               <div className="absolute z-30 bottom-0 left-0 md:w-[25vw] md:h-[38vh] w-[15vw] h-[20vh] bg-gradient-to-br from-black to-black rounded-full filter blur-[80px] opacity-60" />
             </div>
@@ -56,7 +56,7 @@ export default function FacilitiesCarrousel() {
         <CarouselItem className="overflow-visible basis-auto">
           <div className="relative group z-20 md:h-[40vh] h-[30vh] xl:w-[25vw] lg:w-[35vw] w-[50vw] rounded-3xl flex flex-col p-4 items-center justify-center ">
             <div
-              className={`absolute z-40 md:h-[40vh] h-[30vh] xl:w-[25vw] lg:w-[35vw] w-[50vw] bg-cover bg-[url('/facilitie-3.jpg')] bottom-0 right-0 rounded-3xl overflow-hidden`}
+              className={`absolute z-40 md:h-[40vh] h-[30vh] xl:w-[25vw] lg:w-[35vw] w-[50vw] bg-cover bg-[url('/facilitie-3.webp')] bottom-0 right-0 rounded-3xl overflow-hidden`}
             >
               <div className="absolute z-30 bottom-0 left-0 md:w-[25vw] md:h-[38vh] w-[15vw] h-[20vh] bg-gradient-to-br from-black to-black rounded-full filter blur-[80px] opacity-60" />
             </div>

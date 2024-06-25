@@ -7,7 +7,7 @@ export default function HeroGym() {
   return (
     <section
       id="#gymHero"
-      className="relative min-h-screen flex items-center justify-start bg-cover lg:bg-[url('/bg-gym.jpg')] md:bg-[url('/bg-gym-md.jpg')] bg-[url('/bg-gym-sm.jpg')] overflow-hidden object-contain"
+      className="relative min-h-screen flex items-center justify-start bg-cover lg:bg-[url('/bg-gym.webp')] md:bg-[url('/bg-gym-md.webp')] bg-[url('/bg-gym-sm.webp')] overflow-hidden object-contain"
     >
       <div className=" absolute z-10 right-2 md:w-[180vw] h-full w-[200px] bg-gradient-to-tr from-neutral-900 to-black rounded-full filter blur-[80px] opacity-80"></div>
       <div className="flex flex-col items-start justify-center relative z-20 pl-[10vw]">
