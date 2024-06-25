@@ -16,7 +16,7 @@ import { Menu, X } from "lucide-react";
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -144,7 +144,7 @@ export default function Navbar() {
           <Menu size={32} />
         </Button>
       </DrawerTrigger>
-      <DrawerContent className="flex flex-col rounded-r-[10px] h-full w-[70vw] fixed bottom-0 left-0 justify-center">
+      <DrawerContent className="flex flex-col rounded-r-[10px] h-full w-[70vw] md:w-[50vw] fixed bottom-0 left-0 justify-center">
         <DrawerHeader>
           <DrawerClose asChild>
             <Button

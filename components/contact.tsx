@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 export default function Contact() {
   return (
     <div
-      className="flex flex-col justify-center items-center mt-14 md:mb-36 mb-24"
+      className="flex flex-col justify-center items-center mt-14 md:mb-36 mb-24 xl:px-[5vw] lg:px-[10vw] px-[5vw]"
       id="#contactSection"
     >
       <div>
@@ -15,16 +15,16 @@ export default function Contact() {
         </h1>
       </div>
       <>
-        <h2 className="md:text-5xl text-2xl font-bold text-white text-center md:w-[700px] w-[80vw] leading-tight mb-10">
+        <h2 className="xl:text-5xl lg:text-4xl text-2xl font-bold text-white text-center md:w-[700px] w-[80vw] leading-tight mb-10">
           Vamos transformar sua visão em realidade
         </h2>
-        <div className="flex md:w-full md:justify-between md:flex-row flex-col-reverse">
+        <div className="flex md:w-full md:justify-between xl:flex-row flex-col-reverse">
           <ContactForm />
-          <div className="flex flex-col md:items-end items-start justify-center">
-            <h2 className="text-xl font-bold text-white md:text-end text-start md:w-[700px] w-[80vw] leading-tight md:mb-10 mb-4">
+          <div className="flex flex-col xl:items-end items-start justify-center">
+            <h2 className="text-xl font-bold text-white xl:text-end text-center xl:w-[45vw] w-[80vw] leading-tight md:mb-10 mb-4">
               Vamos conversar!
             </h2>
-            <p className="md:text-xl md:w-[500px] w-[75vw] md:mb-16 mb-10 text-wrap md:text-end text-start">
+            <p className="xl:text-xl lg:text-lg xl:w-[40vw] w-[75vw] md:mb-16 mb-10 text-wrap xl:text-end text-start">
               Estou sempre à procura de novos desafios e oportunidades para
               ajudar meus clientes a alcançar seus objetivos digitais. Se você
               precisa de um site do zero, uma atualização no seu site atual ou

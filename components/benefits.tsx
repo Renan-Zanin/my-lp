@@ -15,7 +15,7 @@ export default function BenefitsSection() {
   return (
     <section
       id="#benefitsSection"
-      className="flex flex-col items-center mt-14 md:mb-36 mb-24"
+      className="flex flex-col items-center mt-14 md:mb-36 mb-24 px-[5vw]"
     >
       <ScrollAnimation
         animateIn="flipInX"
@@ -23,7 +23,7 @@ export default function BenefitsSection() {
         animateOnce={true}
       >
         <div className="flex items">
-          <h1 className="md:text-xl text-purple-500 font-medium leading-tight md:mb-8 mb-10 text-left border-solid border-purple-500 border-2 px-4 py-1 rounded-full h-full bg-purple-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+          <h1 className="xl:text-xl text-lg text-purple-500 font-medium leading-tight md:mb-8 mb-10 text-left border-solid border-purple-500 border-2 px-4 py-1 rounded-full h-full bg-purple-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
             A escolha certa para você
           </h1>
         </div>
@@ -37,13 +37,13 @@ export default function BenefitsSection() {
             duration={1.5}
             animateOnce={true}
           >
-            <h2 className="md:text-5xl text-2xl font-bold text-white text-center md:w-[700px] w-[80vw] leading-tight md:mb-24 mb-16">
+            <h2 className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-bold text-white text-center lg:w-[70vw] xl:w-[50vw] w-[80vw] leading-tight md:mb-24 mb-16">
               Conheça os benefícios exclusivos das minhas soluções
               personalizadas.
             </h2>
           </ScrollAnimation>
 
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-10 md:mb-24 mb-20">
+          <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 md:mb-24 mb-20">
             <ScrollAnimation
               animateIn="bounceInUp"
               animateOut="fadeOut"

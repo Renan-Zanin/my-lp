@@ -30,10 +30,10 @@ export default function HeroSection() {
       className="flex items-center h-[100vh] relative justify-center"
     >
       <div className="flex flex-col items-center justify-center relative">
-        <h1 className="md:text-[80px] text-3xl text-white font-bold leading-tight mb-5">
+        <h1 className="lg:text-[80px] md:text-6xl text-3xl text-white font-bold leading-tight mb-5">
           Renan Zanin Oliveira
         </h1>
-        <span className="md:text-4xl text-xl font-extralight md:mb-16 mb-10">
+        <span className="lg:text-4xl md:text-3xl text-xl font-extralight md:mb-16 mb-10">
           Desenvolvedor{" "}
           <TypingEffect
             words={words}

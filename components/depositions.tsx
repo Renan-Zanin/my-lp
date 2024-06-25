@@ -8,7 +8,7 @@ export default function Depositions() {
   return (
     <section
       id="#depositionsSection"
-      className="flex flex-col md:items-end items-center mt-14 md:mb-36 mb-24"
+      className="flex flex-col lg:items-end items-center mt-14 md:mb-36 mb-24 lg:px-[10vw] xl:px-[5vw] px-[5vw]"
     >
       <ScrollAnimation
         animateIn="fadeInRight"
@@ -16,11 +16,11 @@ export default function Depositions() {
         duration={1.5}
         animateOnce={true}
       >
-        <h1 className="md:text-xl text-purple-500 font-medium leading-tight md:mb-8 mb-10 text-right border-solid border-purple-500 border-2 px-4 py-1 rounded-full h-full bg-purple-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+        <h1 className="lg:text-xl text-lg text-purple-500 font-medium leading-tight md:mb-8 mb-10 text-right border-solid border-purple-500 border-2 px-4 py-1 rounded-full h-full bg-purple-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
           Depoimentos!
         </h1>
       </ScrollAnimation>
-      <div className="flex md:flex-row flex-col justify-between items-center mb-10 w-full">
+      <div className="flex lg:flex-row flex-col-reverse justify-between items-center mb-10 w-full">
         <div>
           <ScrollAnimation
             animateIn="fadeInLeft"
@@ -51,11 +51,11 @@ export default function Depositions() {
           duration={1.5}
           animateOnce={true}
         >
-          <div className="flex flex-col md:items-end items-center">
-            <h1 className="md:text-5xl text-2xl font-bold text-white md:text-end text-center md:w-[700px] leading-tight mb-10">
+          <div className="flex flex-col lg:items-end items-center">
+            <h2 className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-bold text-white lg:text-end text-center md:w-[50vw] leading-tight mb-10">
               O que meus clientes dizem
-            </h1>
-            <p className="md:text-xl text-[16px] md:w-[600px] w-[80vw] md:mb-16 mb-12 text-wrap md:text-end text-start">
+            </h2>
+            <p className="xl:text-xl md:text-lg text-base lg:w-[50vw] w-[80vw] md:mb-16 mb-12 text-wrap lg:text-end text-start">
               Nada fala mais sobre a qualidade do meu trabalho do que as
               palavras dos meus clientes satisfeitos. Veja o que eles têm a
               dizer sobre suas experiências trabalhando comigo e como consegui
