@@ -1,14 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import ScrollAnimation from "react-animate-on-scroll";
 
 export default function Depositions() {

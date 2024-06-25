@@ -5,11 +5,9 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Headset, Settings, TabletSmartphone } from "lucide-react";
 import Link from "next/link";
 import ScrollAnimation from "react-animate-on-scroll";
 import Corte from "/public/corte-mockup.png";
