@@ -36,7 +36,11 @@ export default function AboutProfile() {
               alunos. Minha missão é proporcionar uma educação de qualidade que
               seja acessível e prática. Vamos embarcar nessa jornada juntos?
             </p>
-            <Button variant="profile" className="mt-10">
+            <Button
+              variant="profile"
+              className="mt-10"
+              aria-label="Comece sua jornada agora"
+            >
               Comece Sua Jornada Agora
             </Button>
           </div>

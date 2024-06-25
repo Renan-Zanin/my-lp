@@ -39,7 +39,7 @@ export default function AboutGym() {
               <div className="absolute z-30 h-[38vh] w-[30vh] bg-cover bg-[url('/card-4.webp')] bottom-0 right-0 rounded-3xl" />
             </div>
             <div className=" relative z-20 h-[38vh] w-[30vh] bg-rose-600 rounded-3xl md:order-2 order-1">
-              <div className="absolute z-30 h-[48vh] w-[30vh] bg-cover bg-[url('/card-2.png')] bottom-0 right-0 rounded-3xl" />
+              <div className="absolute z-30 h-[48vh] w-[30vh] bg-cover bg-[url('/card-2.avif')] bottom-0 right-0 rounded-3xl" />
             </div>
           </div>
         </div>

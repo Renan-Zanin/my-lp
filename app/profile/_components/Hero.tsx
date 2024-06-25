@@ -21,7 +21,11 @@ export default function HeroProfile() {
               Descubra o método que já ajudou diversos profissionais a
               alcançarem o sucesso em tempo recorde.
             </h2>
-            <Button variant="profile" className="lg:mr-0 md:mr-80 mr-28">
+            <Button
+              variant="profile"
+              className="lg:mr-0 md:mr-80 mr-28"
+              aria-label="Descubra mais"
+            >
               Descubra Mais
             </Button>
           </div>

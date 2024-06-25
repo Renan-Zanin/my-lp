@@ -7,7 +7,6 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -90,7 +89,11 @@ export default function ModulesProfile() {
               </div>
             </CardContent>
             <CardFooter>
-              <Button variant="profile" className="mt-10 z-20">
+              <Button
+                variant="profile"
+                className="mt-10 z-20"
+                aria-label="Veja todos os detalhes"
+              >
                 Veja Todos os Detalhes
               </Button>
             </CardFooter>

@@ -46,7 +46,7 @@ export default function ProfileNavbar() {
         }`}
       >
         <div className="flex gap-x-2">
-          <Button asChild variant="link" className="text-xl">
+          <Button asChild variant="link" className="text-xl" aria-label="Home">
             <Link
               to="#heroSection"
               spy={true}
@@ -59,7 +59,7 @@ export default function ProfileNavbar() {
               </span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="text-xl">
+          <Button asChild variant="link" className="text-xl" aria-label="Sobre">
             <Link
               to="#profileAbout"
               spy={true}
@@ -72,7 +72,12 @@ export default function ProfileNavbar() {
               </span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="text-xl">
+          <Button
+            asChild
+            variant="link"
+            className="text-xl"
+            aria-label="Módulos"
+          >
             <Link
               to="#profileModules"
               spy={true}
@@ -85,7 +90,12 @@ export default function ProfileNavbar() {
               </span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="text-xl">
+          <Button
+            asChild
+            variant="link"
+            className="text-xl"
+            aria-label="Depoimentos"
+          >
             <Link
               to="#profileDepositions"
               spy={true}
@@ -98,7 +108,12 @@ export default function ProfileNavbar() {
               </span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="text-xl">
+          <Button
+            asChild
+            variant="link"
+            className="text-xl"
+            aria-label="Planos"
+          >
             <Link
               to="#profilePrice"
               spy={true}
@@ -119,7 +134,7 @@ export default function ProfileNavbar() {
     <Drawer open={open} onOpenChange={setOpen} direction="left">
       <DrawerOverlay className="bg-orange-50 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5" />
       <DrawerTrigger asChild className="fixed top-4 left-4 z-50">
-        <Button variant="ghost">
+        <Button variant="ghost" aria-label="Abrir menu">
           <RiMenu4Fill size={32} className="text-orange-900" />
         </Button>
       </DrawerTrigger>
@@ -127,14 +142,23 @@ export default function ProfileNavbar() {
         <div className="absolute bottom-0 h-full w-full border-orange-900 border-2 rounded-r-[20vw] left-1"></div>
         <DrawerHeader>
           <DrawerClose asChild>
-            <Button variant="ghost" className="fixed top-10 right-8">
+            <Button
+              variant="ghost"
+              className="fixed top-10 right-8"
+              aria-label="Fechar menu"
+            >
               <X size={32} className="text-orange-900" />
             </Button>
           </DrawerClose>
         </DrawerHeader>
         <div className="flex flex-col items-start gap-y-8">
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Home"
+            >
               <Link
                 to="#heroSection"
                 spy={true}
@@ -149,7 +173,12 @@ export default function ProfileNavbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Sobre"
+            >
               <Link
                 to="#profileAbout"
                 spy={true}
@@ -163,7 +192,12 @@ export default function ProfileNavbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Módulos"
+            >
               <Link
                 to="#profileModules"
                 spy={true}
@@ -178,7 +212,12 @@ export default function ProfileNavbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Depoimentos"
+            >
               <Link
                 to="#profileDepositions"
                 spy={true}
@@ -193,7 +232,12 @@ export default function ProfileNavbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Planos"
+            >
               <Link
                 to="#profilePrices"
                 spy={true}

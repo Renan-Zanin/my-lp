@@ -7,7 +7,6 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -79,7 +78,11 @@ export default function PriceProfile() {
                 </div>
               </CardContent>
               <CardFooter>
-                <Button variant="profile" className="mt-8 z-20 mb-6">
+                <Button
+                  variant="profile"
+                  className="mt-8 z-20 mb-6"
+                  aria-label="Inscreva-se agora"
+                >
                   Inscreva-se Agora
                 </Button>
               </CardFooter>

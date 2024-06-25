@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import Image, { StaticImageData } from "next/image";
-import DepositionImage from "/public/deposition.webp";
 import { IoMdStar } from "react-icons/io";
 
 interface DepositionsCardProps {

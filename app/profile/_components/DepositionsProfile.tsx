@@ -28,7 +28,11 @@ export default function DepositionsProfile() {
               alunos têm a dizer. Essas histórias são apenas uma amostra do
               impacto que meu curso pode ter na sua vida.
             </p>
-            <Button variant="profile" className="mt-10">
+            <Button
+              variant="profile"
+              className="mt-10"
+              aria-label="Transforme sua vida hoje"
+            >
               Transforme Sua Vida Hoje
             </Button>
           </div>

@@ -51,8 +51,16 @@ export default function DepositionsCarrousel() {
           />
         </CarouselItem>
       </CarouselContent>
-      <CarouselPrevious variant="profile" className="h-6 w-6 top-8 left-5" />
-      <CarouselNext variant="profile" className="h-6 w-6 top-8 left-14" />
+      <CarouselPrevious
+        variant="profile"
+        className="h-6 w-6 top-8 left-5"
+        aria-label="Passar para imagem anterior"
+      />
+      <CarouselNext
+        variant="profile"
+        className="h-6 w-6 top-8 left-14"
+        aria-label="Passar para imagem posterior"
+      />
     </Carousel>
   );
 }
