@@ -25,7 +25,11 @@ export default function FacilitiesGym() {
               seu conforto e comodidade. Venha conhecer nosso espaço e se
               surpreenda com o ambiente acolhedor e profissional.
             </p>
-            <Button variant="gym" className="mt-10">
+            <Button
+              variant="gym"
+              className="mt-10"
+              aria-label="Inscreva-se agora"
+            >
               Inscreva-se agora
             </Button>
           </div>

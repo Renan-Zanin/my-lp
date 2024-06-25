@@ -26,7 +26,11 @@ export default function AboutGym() {
               amigável e de apoio torna cada visita uma experiência agradável e
               motivadora.
             </p>
-            <Button variant="gym" className="mt-10">
+            <Button
+              variant="gym"
+              className="mt-10"
+              aria-label="Experimente a transformação"
+            >
               Experimente a Transformação
             </Button>
           </div>

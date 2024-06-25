@@ -41,7 +41,12 @@ export function GymNavbar() {
     return (
       <nav className="absolute top-0 w-[80vw] z-50 flex flex-row items-center justify-center py-4 bg-neutral-800 rounded-full mt-4">
         <div className="flex xl:gap-x-2 gap-x-1">
-          <Button asChild variant="link" className="xl:text-xl text-lg">
+          <Button
+            asChild
+            variant="link"
+            className="xl:text-xl text-lg"
+            aria-label="Home"
+          >
             <Link
               to="#gymHero"
               spy={true}
@@ -52,7 +57,12 @@ export function GymNavbar() {
               <span className="sublinhado-gradiente font-semibold">Home</span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="xl:text-xl text-lg">
+          <Button
+            asChild
+            variant="link"
+            className="xl:text-xl text-lg"
+            aria-label="Sobre"
+          >
             <Link
               to="#gymAbout"
               spy={true}
@@ -63,7 +73,12 @@ export function GymNavbar() {
               <span className="sublinhado-gradiente font-semibold">Sobre</span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="xl:text-xl text-lg">
+          <Button
+            asChild
+            variant="link"
+            className="xl:text-xl text-lg"
+            aria-label="Aulas"
+          >
             <Link
               to="#gymClasses"
               spy={true}
@@ -87,7 +102,12 @@ export function GymNavbar() {
               </span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="xl:text-xl text-lg">
+          <Button
+            asChild
+            variant="link"
+            className="xl:text-xl text-lg"
+            aria-label="Depoimentos"
+          >
             <Link
               to="#gymDepositions"
               spy={true}
@@ -100,7 +120,12 @@ export function GymNavbar() {
               </span>
             </Link>
           </Button>
-          <Button asChild variant="link" className="xl:text-xl text-lg">
+          <Button
+            asChild
+            variant="link"
+            className="xl:text-xl text-lg"
+            aria-label="Planos"
+          >
             <Link
               to="#gymPrices"
               spy={true}
@@ -116,6 +141,7 @@ export function GymNavbar() {
             asChild
             variant="gym"
             className="cursor-pointer bg-rose-600 text-black"
+            aria-label="Comece agora"
           >
             <Link
               to="#contactSection"
@@ -135,21 +161,30 @@ export function GymNavbar() {
   return (
     <Drawer open={open} onOpenChange={setOpen} direction="left">
       <DrawerTrigger asChild className="fixed top-4 left-4 z-50">
-        <Button variant="ghost">
+        <Button variant="ghost" aria-label="Abrir menu">
           <Menu size={32} />
         </Button>
       </DrawerTrigger>
       <DrawerContent className="flex flex-col rounded-r-3xl h-full w-[70vw] md:w-[50vw] fixed bottom-0 left-0 justify-center bg-black">
         <DrawerHeader>
           <DrawerClose asChild>
-            <Button variant="ghost" className="fixed top-4 right-2">
+            <Button
+              variant="ghost"
+              className="fixed top-4 right-2"
+              aria-label="Fechar menu"
+            >
               <X size={32} />
             </Button>
           </DrawerClose>
         </DrawerHeader>
         <div className="flex flex-col items-start gap-y-8">
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Home"
+            >
               <Link
                 to="#gymHero"
                 spy={true}
@@ -162,7 +197,12 @@ export function GymNavbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Sobre"
+            >
               <Link
                 to="#gymAbout"
                 spy={true}
@@ -176,7 +216,12 @@ export function GymNavbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Aulas"
+            >
               <Link
                 to="#gymClasses"
                 spy={true}
@@ -191,7 +236,12 @@ export function GymNavbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Instalações"
+            >
               <Link
                 to="#gymFacilities"
                 spy={true}
@@ -206,7 +256,12 @@ export function GymNavbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Depoimentos"
+            >
               <Link
                 to="#gymDepositions"
                 spy={true}
@@ -221,7 +276,12 @@ export function GymNavbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild variant="link" className="text-xl">
+            <Button
+              asChild
+              variant="link"
+              className="text-xl"
+              aria-label="Planos"
+            >
               <Link
                 to="#gymPrices"
                 spy={true}
@@ -236,7 +296,7 @@ export function GymNavbar() {
             </Button>
           </DrawerClose>
           <DrawerClose asChild>
-            <Button asChild variant="gym">
+            <Button asChild variant="gym" aria-label="Comece agora">
               <Link
                 to="#contactSection"
                 spy={true}

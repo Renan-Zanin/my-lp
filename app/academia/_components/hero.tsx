@@ -21,7 +21,11 @@ export default function HeroGym() {
           Descubra um ambiente motivador com equipamentos de última geração e
           treinadores dedicados
         </span>
-        <Button variant="gym" className="bg-rose-600">
+        <Button
+          variant="gym"
+          className="bg-rose-600"
+          aria-label="Descubra mais"
+        >
           Descubra Mais
         </Button>
       </div>

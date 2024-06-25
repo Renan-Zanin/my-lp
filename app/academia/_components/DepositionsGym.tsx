@@ -30,7 +30,11 @@ export default function DespositionsGym() {
               inspire-se com as jornadas de sucesso daqueles que escolheram
               nossa academia para transformar suas vidas.
             </p>
-            <Button variant="gym" className="mt-10">
+            <Button
+              variant="gym"
+              className="mt-10"
+              aria-label="Venha nos conhecer"
+            >
               Venha nos conhecer
             </Button>
           </div>

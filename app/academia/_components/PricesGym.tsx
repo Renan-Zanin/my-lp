@@ -70,7 +70,9 @@ export default function PricesGym() {
               </div>
             </CardContent>
             <CardFooter>
-              <Button variant="gym">Junte-se agora</Button>
+              <Button variant="gym" aria-label="Junte-se agora">
+                Junte-se agora
+              </Button>
             </CardFooter>
           </Card>
           <Card className="flex flex-col bg-rose-600 border-none shadow-none lg:mb-10 items-center justify-center w-full lg:order-2 order-1">
@@ -117,7 +119,11 @@ export default function PricesGym() {
               </div>
             </CardContent>
             <CardFooter>
-              <Button variant="gym" className="bg-white hover:bg-white/90">
+              <Button
+                variant="gym"
+                className="bg-white hover:bg-white/90"
+                aria-label="Junte-se agora"
+              >
                 Junte-se agora
               </Button>
             </CardFooter>
@@ -166,7 +172,9 @@ export default function PricesGym() {
               </div>
             </CardContent>
             <CardFooter>
-              <Button variant="gym">Junte-se agora</Button>
+              <Button variant="gym" aria-label="Junte-se agora">
+                Junte-se agora
+              </Button>
             </CardFooter>
           </Card>
         </div>

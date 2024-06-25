@@ -1,5 +1,4 @@
 import React from "react";
-import ClassesCard from "./classesCard";
 import ClassesCarrousel from "./classesCarrousel";
 
 export default function ClassesGym() {

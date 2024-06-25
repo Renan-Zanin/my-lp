@@ -30,6 +30,7 @@ export default function ClassesCard({ type, exercise }: ClassesCardProps) {
         <Button
           variant="gym"
           className="bg-black text-white transition duration-500 ease-in-out hover:bg-black/80"
+          aria-label="Junte-se agora"
         >
           Junte-se agora
         </Button>
