@@ -9,8 +9,8 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import DepositionsCard from "./DepositionsCard";
-import DepositionImage from "/public/profile.webp";
-import DepositionImage2 from "/public/profile-2.webp";
+import DepositionImage from "/public/deposition-3.webp";
+import DepositionImage2 from "/public/deposition-2.webp";
 import DepositionImage3 from "/public/deposition.webp";
 
 export default function DepositionsCarrousel() {
