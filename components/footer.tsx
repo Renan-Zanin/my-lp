@@ -16,10 +16,10 @@ export function Footer() {
           <Image src={Logo} alt="logo rzanin" className="w-[5vw] mb-4" />
 
           <p className="text-sm mb-6">
-            Estamos aqui para ajudar você a alcançar seus objetivos de fitness e
-            bem-estar. Entre em contato conosco para mais informações, tirar
-            dúvidas ou agendar uma visita. Junte-se à nossa comunidade e
-            transforme sua vida hoje mesmo!
+            Minha missão é transformar a presença online dos meus clientes,
+            oferecendo soluções web personalizadas e landing pages de alto
+            impacto. Entre em contato para descobrir como posso ajudar seu
+            negócio a alcançar novos patamares de sucesso.
           </p>
           <div className="flex gap-6">
             <a href="https://github.com/Renan-Zanin" target="_blank">
