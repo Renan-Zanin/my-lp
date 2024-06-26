@@ -16,8 +16,8 @@ export async function sendEmail(
     const { name, email, message, phone } = result.data;
     try {
       const data = await resend.emails.send({
-        from: "onboarding@resend.dev",
-        to: "renanzanin01@gmail.com",
+        from: "renanzanin01@gmail.com",
+        to: email,
         subject: "Contato inicial",
         text: `Nome: ${name}\nEmail: ${email}\nMessage: ${message}\nTelefone: ${phone} `,
         react: WelcomeEmail({ name }),
