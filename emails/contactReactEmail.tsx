@@ -1,146 +1,135 @@
 import {
   Body,
+  Button,
   Container,
   Head,
-  Heading,
+  Hr,
   Html,
   Img,
   Link,
   Preview,
+  Section,
   Text,
 } from "@react-email/components";
 import * as React from "react";
+import Logo from "/public/logo.png";
 
-interface NotionMagicLinkEmailProps {
-  loginCode?: string;
+interface ContactFormEmailProps {
+  name: string;
 }
 
 const baseUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
   : "";
 
-export const NotionMagicLinkEmail = ({
-  loginCode = "sparo-ndigo-amurt-secan",
-}: NotionMagicLinkEmailProps) => (
+export const WelcomeEmail: React.FC<Readonly<ContactFormEmailProps>> = ({
+  name,
+}) => (
   <Html>
     <Head />
-    <Preview>Log in with this magic link</Preview>
+    <Preview>Agradeço pelo contato inicial</Preview>
     <Body style={main}>
       <Container style={container}>
-        <Heading style={h1}>Login</Heading>
-        <Link
-          href="https://notion.so"
-          target="_blank"
-          style={{
-            ...link,
-            display: "block",
-            marginBottom: "16px",
-          }}
-        >
-          Click here to log in with this magic link
-        </Link>
-        <Text style={{ ...text, marginBottom: "14px" }}>
-          Or, copy and paste this temporary login code:
-        </Text>
-        <code style={code}>{loginCode}</code>
-        <Text
-          style={{
-            ...text,
-            color: "#ababab",
-            marginTop: "14px",
-            marginBottom: "16px",
-          }}
-        >
-          If you didn&apos;t try to login, you can safely ignore this email.
-        </Text>
-        <Text
-          style={{
-            ...text,
-            color: "#ababab",
-            marginTop: "12px",
-            marginBottom: "38px",
-          }}
-        >
-          Hint: You can set a permanent password in Settings & members → My
-          account.
-        </Text>
-        <Img
-          src={`${baseUrl}/static/notion-logo.png`}
-          width="32"
-          height="32"
-          alt="Notion's Logo"
-        />
-        <Text style={footer}>
-          <Link
-            href="https://notion.so"
-            target="_blank"
-            style={{ ...link, color: "#898989" }}
-          >
-            Notion.so
-          </Link>
-          , the all-in-one-workspace
-          <br />
-          for your notes, tasks, wikis, and databases.
-        </Text>
+        <Section style={box}>
+          <Img
+            src={`${baseUrl}/public/logo.png`}
+            width="49"
+            height="21"
+            alt="RZanin logo"
+          />
+          <Hr style={hr} />
+          <Text style={paragraph}>Prezado(a) {name},</Text>
+          <Text style={paragraph}>
+            Espero que esta mensagem o (a) encontre bem.
+          </Text>
+
+          <Hr style={hr} />
+          <Text style={paragraph}>
+            Gostaria de agradecer por entrar em contato e manifestar interesse
+            em desenvolver seu novo site comigo. Fico muito feliz em saber que
+            você me escolheu para este projeto tão importante.
+          </Text>
+          <Text style={paragraph}>
+            Estou ansioso para entender suas necessidades e expectativas, de
+            forma a criar um site que reflita perfeitamente sua visão e
+            objetivos. Nos próximos dias, entrarei em contato para agendarmos
+            uma reunião inicial, onde poderemos discutir todos os detalhes
+            necessários e alinhar os próximos passos para o desenvolvimento do
+            seu site.
+          </Text>
+          <Text style={paragraph}>
+            Enquanto isso, caso tenha alguma dúvida ou precise de mais
+            informações, sinta-se à vontade para entrar em contato comigo
+            diretamente.
+          </Text>
+          <Text style={paragraph}>
+            Agradeço mais uma vez pela confiança em nosso trabalho. Estamos
+            entusiasmados em começar essa jornada com você.
+          </Text>
+          <Text style={paragraph}>— Renan Zanin Oliveira</Text>
+          <Hr style={hr} />
+          <Text style={footer}>
+            <Link style={anchor} href="https://my-lp-nine.vercel.app">
+              Visite meu site
+            </Link>
+          </Text>
+        </Section>
       </Container>
     </Body>
   </Html>
 );
 
-export default NotionMagicLinkEmail;
+export default WelcomeEmail;
 
 const main = {
-  backgroundColor: "#ffffff",
+  backgroundColor: "#f6f9fc",
+  fontFamily:
+    '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif',
 };
 
 const container = {
-  paddingLeft: "12px",
-  paddingRight: "12px",
+  backgroundColor: "#ffffff",
   margin: "0 auto",
+  padding: "20px 0 48px",
+  marginBottom: "64px",
 };
 
-const h1 = {
-  color: "#333",
-  fontFamily:
-    "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-  fontSize: "24px",
+const box = {
+  padding: "0 48px",
+};
+
+const hr = {
+  borderColor: "#e6ebf1",
+  margin: "20px 0",
+};
+
+const paragraph = {
+  color: "#525f7f",
+
+  fontSize: "16px",
+  lineHeight: "24px",
+  textAlign: "left" as const,
+};
+
+const anchor = {
+  color: "#556cd6",
+};
+
+const button = {
+  backgroundColor: "#656ee8",
+  borderRadius: "5px",
+  color: "#fff",
+  fontSize: "16px",
   fontWeight: "bold",
-  margin: "40px 0",
-  padding: "0",
-};
-
-const link = {
-  color: "#2754C5",
-  fontFamily:
-    "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-  fontSize: "14px",
-  textDecoration: "underline",
-};
-
-const text = {
-  color: "#333",
-  fontFamily:
-    "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-  fontSize: "14px",
-  margin: "24px 0",
+  textDecoration: "none",
+  textAlign: "center" as const,
+  display: "block",
+  width: "100%",
+  padding: "10px",
 };
 
 const footer = {
-  color: "#898989",
-  fontFamily:
-    "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
+  color: "#8898aa",
   fontSize: "12px",
-  lineHeight: "22px",
-  marginTop: "12px",
-  marginBottom: "24px",
-};
-
-const code = {
-  display: "inline-block",
-  padding: "16px 4.5%",
-  width: "90.5%",
-  backgroundColor: "#f4f4f4",
-  borderRadius: "5px",
-  border: "1px solid #eee",
-  color: "#333",
+  lineHeight: "16px",
 };

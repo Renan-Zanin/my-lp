@@ -102,9 +102,12 @@ export function FooterProfile() {
         <span className="text-sm text-stone-600 mr-4">
           © 2024 Seu Curso. Todos os direitos reservados.
         </span>
-        <p className="text-sm text-stone-600 border-l-[1px] pl-4 border-stone-600">
+        <a
+          className="text-sm text-stone-600 border-l-[1px] pl-4 border-stone-600"
+          href="/"
+        >
           Desenvolvido por RZanin Dev
-        </p>
+        </a>
       </div>
     </footer>
   );

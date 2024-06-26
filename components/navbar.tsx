@@ -12,6 +12,8 @@ import {
 } from "@/components/ui/drawer";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { Menu, X } from "lucide-react";
+import Logo from "/public/logo.png";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -52,7 +54,7 @@ export default function Navbar() {
               offset={-110}
               duration={700}
             >
-              <span className="sublinhado-gradiente font-semibold">Home</span>
+              <Image src={Logo} alt="logo rzanin" className="w-[5vw] mt-2" />
             </Link>
           </Button>
           <Button asChild variant="link" className="text-xl" aria-label="Sobre">

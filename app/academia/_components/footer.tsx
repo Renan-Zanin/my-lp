@@ -102,7 +102,9 @@ export function Footer() {
         </div>
       </div>
       <div className="flex items-center pt-8">
-        <p className="text-sm">Desenvolvido por RZanin Dev</p>
+        <a className="text-sm" href="/">
+          Desenvolvido por RZanin Dev
+        </a>
       </div>
     </footer>
   );
