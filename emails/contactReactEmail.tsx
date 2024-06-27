@@ -32,9 +32,9 @@ export const WelcomeEmail: React.FC<Readonly<ContactFormEmailProps>> = ({
       <Container style={container}>
         <Section style={box}>
           <Img
-            src={`${baseUrl}/public/logo.png`}
-            width="49"
-            height="21"
+            src={`https://rzanindev.com.br/emailLogo.png`}
+            width="100"
+            height="30"
             alt="RZanin logo"
           />
           <Hr style={hr} />

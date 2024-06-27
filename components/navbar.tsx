@@ -130,7 +130,7 @@ export default function Navbar() {
               smooth={true}
               offset={-110}
               duration={700}
-              className="text-foreground ml-10"
+              className="text-foreground ml-10 cursor-pointer"
             >
               Comece agora!
             </Link>
@@ -173,7 +173,7 @@ export default function Navbar() {
                 offset={-80}
                 duration={700}
               >
-                <span className="sublinhado-gradiente font-semibold">Home</span>
+                <Image src={Logo} alt="logo rzanin" className="w-[5vw] mt-2" />
               </Link>
             </Button>
           </DrawerClose>
