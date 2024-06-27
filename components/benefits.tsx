@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import { Headset, Settings, TabletSmartphone } from "lucide-react";
 import ScrollAnimation from "react-animate-on-scroll";
+import { Link } from "react-scroll";
 
 export default function BenefitsSection() {
   return (
@@ -113,8 +114,21 @@ export default function BenefitsSection() {
             </ScrollAnimation>
           </div>
 
-          <Button className="z-10" aria-label="Veja todos os benefícios">
-            Veja Todos os Benefícios!
+          <Button
+            className="z-10"
+            aria-label="Veja todos os benefícios"
+            asChild
+          >
+            <Link
+              to="#contactSection"
+              spy={true}
+              smooth={true}
+              offset={-110}
+              duration={700}
+              className="text-foreground ml-10 cursor-pointer"
+            >
+              Veja Todos os Benefícios!
+            </Link>
           </Button>
         </div>
       </div>

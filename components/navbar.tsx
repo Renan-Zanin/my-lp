@@ -173,7 +173,7 @@ export default function Navbar() {
                 offset={-80}
                 duration={700}
               >
-                <Image src={Logo} alt="logo rzanin" className="w-[5vw] mt-2" />
+                <Image src={Logo} alt="logo rzanin" className="w-[25vw] mt-2" />
               </Link>
             </Button>
           </DrawerClose>
@@ -262,7 +262,7 @@ export default function Navbar() {
                 to="#contactSection"
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-60}
                 duration={700}
                 className="text-foreground ml-10"
               >

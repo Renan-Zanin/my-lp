@@ -14,6 +14,7 @@ import {
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiNextdotjs } from "react-icons/si";
 import ScrollAnimation from "react-animate-on-scroll";
+import { Link } from "react-scroll";
 
 export default function AboutSection() {
   return (
@@ -68,8 +69,18 @@ export default function AboutSection() {
             <Button
               className="z-20 md:mb-0 mb-10"
               aria-label="Saiba mais detalhes"
+              asChild
             >
-              Saiba Mais Detalhes!
+              <Link
+                to="#contactSection"
+                spy={true}
+                smooth={true}
+                offset={-110}
+                duration={700}
+                className="text-foreground ml-10 cursor-pointer"
+              >
+                Saiba Mais Detalhes!
+              </Link>
             </Button>
           </div>
         </ScrollAnimation>

@@ -90,7 +90,7 @@ export function Footer() {
           <h1 className="font-bold mb-6">Entre em contato</h1>
           <div className="flex gap-4 mb-3">
             <FaPhone size={22} className="text-blue-500" />
-            <p>(12) 98149-7676</p>
+            <p>(12) 98149-7675</p>
           </div>
           <div className="flex gap-4 mb-3">
             <MdEmail size={24} className="text-blue-500" />

@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Link } from "react-scroll";
 
 export default function EndingSection() {
   return (
@@ -25,7 +26,18 @@ export default function EndingSection() {
             jornada rumo ao sucesso digital. Estamos ansiosos para trabalhar com
             você!
           </p>
-          <Button aria-label="Aproveite a oferta">Aproveite a Oferta!</Button>
+          <Button aria-label="Aproveite a oferta" asChild>
+            <Link
+              to="#contactSection"
+              spy={true}
+              smooth={true}
+              offset={-110}
+              duration={700}
+              className="text-foreground ml-10 cursor-pointer"
+            >
+              Aproveite a Oferta!
+            </Link>
+          </Button>
         </div>
       </div>
     </section>

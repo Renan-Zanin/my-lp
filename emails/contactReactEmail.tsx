@@ -33,8 +33,8 @@ export const WelcomeEmail: React.FC<Readonly<ContactFormEmailProps>> = ({
         <Section style={box}>
           <Img
             src={`https://rzanindev.com.br/emailLogo.png`}
-            width="100"
-            height="30"
+            width="110"
+            height="25"
             alt="RZanin logo"
           />
           <Hr style={hr} />
@@ -69,7 +69,7 @@ export const WelcomeEmail: React.FC<Readonly<ContactFormEmailProps>> = ({
           <Text style={paragraph}>— Renan Zanin Oliveira</Text>
           <Hr style={hr} />
           <Text style={footer}>
-            <Link style={anchor} href="https://my-lp-nine.vercel.app">
+            <Link style={anchor} href="https://rzanindev.com.br">
               Visite meu site
             </Link>
           </Text>
