@@ -16,6 +16,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "./ui/button";
 import { sendEmail } from "@/app/_actions";
+import { toast } from "react-hot-toast";
 
 export const formSchema = z.object({
   name: z.string().min(1),
@@ -48,13 +49,21 @@ export default function ContactForm() {
 
   const onSubmit: SubmitHandler<ContactFormValues> = async (data) => {
     const result = formSchema.safeParse(data);
-    const finalResult = await sendEmail(result);
+    try {
+      setLoading(true);
+      const finalResult = await sendEmail(result);
+      if (finalResult?.success) {
+        console.log({ data: finalResult.data });
+        toast.success("E-mail enviado com sucesso");
 
-    if (finalResult?.success) {
-      console.log({ data: finalResult.data });
-      return;
+        return;
+      }
+    } catch (error) {
+      toast.error("Algo deu errado");
+    } finally {
+      setLoading(false);
+      window.location.reload();
     }
-    console.log(finalResult?.error);
   };
 
   return (
@@ -140,7 +149,11 @@ export default function ContactForm() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" aria-label="Enviar formulário">
+              <Button
+                type="submit"
+                aria-label="Enviar formulário"
+                disabled={loading}
+              >
                 Enviar
               </Button>
             </form>
