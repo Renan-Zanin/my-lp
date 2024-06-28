@@ -36,6 +36,7 @@ export default function Contact() {
                 href="https://github.com/Renan-Zanin"
                 target="_blank"
                 className="hover:text-[#181717] inline-block transform hover:-translate-y-1 transition duration-200"
+                aria-label="Visite minha página no github"
               >
                 <FaGithub
                   size={26}
@@ -46,6 +47,7 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/renanzanindev/"
                 target="_blank"
                 className="hover:text-[#0077B5] inline-block transform hover:-translate-y-1 transition duration-200"
+                aria-label="Visite minha página no Linkedin"
               >
                 <FaLinkedin
                   size={26}

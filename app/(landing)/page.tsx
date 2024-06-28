@@ -18,7 +18,11 @@ export default function Home() {
       <PortifolioSection />
       <EndingSection />
       <Contact />
-      <a href="https://wa.me/5512981497675" target="_blank">
+      <a
+        href="https://wa.me/5512981497675"
+        target="_blank"
+        aria-label="Me chame no whatsapp"
+      >
         <FaWhatsapp className="fixed z-40 animate-float md:bottom-20 md:right-20 bottom-10 right-10 text-blue-500 lg:w-[3vw] lg:h-[3vw] md:w-[6vw] md:h-[6vw] w-[9vw] h-[9vw]" />
       </a>
     </main>

@@ -22,12 +22,17 @@ export function Footer() {
             negócio a alcançar novos patamares de sucesso.
           </p>
           <div className="flex gap-6">
-            <a href="https://github.com/Renan-Zanin" target="_blank">
+            <a
+              href="https://github.com/Renan-Zanin"
+              target="_blank"
+              aria-label="Visite minha página no github"
+            >
               <FaGithub size={24} className="text-blue-500" />
             </a>
             <a
               href="https://www.linkedin.com/in/renanzanindev/"
               target="_blank"
+              aria-label="Visite minha página no Linkedin"
             >
               <FaLinkedin size={24} className="text-blue-500" />
             </a>
