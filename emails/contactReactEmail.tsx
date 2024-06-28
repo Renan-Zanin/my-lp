@@ -12,7 +12,6 @@ import {
   Text,
 } from "@react-email/components";
 import * as React from "react";
-import Logo from "/public/logo.png";
 
 interface ContactFormEmailProps {
   name: string;
