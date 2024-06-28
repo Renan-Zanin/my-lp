@@ -12,13 +12,13 @@ export default function AboutProfile() {
       className="pb-24 flex justify-start 2xl:px-[15vw] lg:px-[10vw] px-[5vw] pt-10"
     >
       <div className="flex md:flex-row flex-col-reverse items-center md:justify-between justify-center">
-        <div className="relative md:mt-0 mt-16">
+        <div className="relative md:mt-20 mt-16">
           <Image
             src={ProfileImage}
             alt="Imagem de perfil"
-            className="items-center md:rounded-tr-[400px] 2xl:h-[70vh] xl:h-[60vh] lg:h-[50vh] h-[30vh] object-contain"
+            className="items-center rounded-tr-[400px] h-full  object-contain"
           />
-          <div className="absolute xl:top-10 md:top-6 top-2 h-full w-[25vh] lg:w-[34vh] 2xl:w-[50vh] xl:w-[42vh] border-orange-900 border-2 md:rounded-tr-[400px] 2xl:left-20 xl:left-24 lg:left-8 md:left-10 left-1/2 transform -translate-x-1/2"></div>
+          <div className="absolute xl:top-10 md:top-6 top-2 h-full w-[36vh] lg:w-[34vh] 2xl:w-[35vh] xl:w-[38vh] border-orange-900 border-2 rounded-tr-[400px] lg:left-36 md:right-10 left-1/2 transform -translate-x-1/2"></div>
         </div>
         <div className="mt-24 flex flex-col md:items-end items-center">
           <h1 className="font-semibold 2xl:text-6xl lg:text-5xl md:text-4xl text-3xl text-orange-900 tracking-normal md:text-end text-center uppercase xl:w-[40vw] lg:w-[50vw] md:w-[55vw] w-[80vw]">

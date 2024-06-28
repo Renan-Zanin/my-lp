@@ -17,7 +17,7 @@ export default function HeroProfile() {
             <h1 className="2xl:text-6xl md:text-5xl text-3xl mb-6 text-orange-900 font-bold leading-tight uppercase lg:w-[41vw] w-[70vw] lg:text-start text-center">
               Transforme sua carreira hoje mesmo
             </h1>
-            <h2 className="2xl:text-4xl xl:text-3xl md:text-2xl text-xl lg:text-start text-center font-light md:mb-16 mb-10 2xl:w-[40vw] xl:w-[35vw] w-[80vw] text-black">
+            <h2 className="2xl:text-4xl xl:text-3xl md:text-2xl text-xl lg:text-start text-center font-light md:mb-16 mb-10 2xl:w-[40vw] xl:w-[35vw] md:w-[45vw] w-[80vw] text-black">
               Descubra o método que já ajudou diversos profissionais a
               alcançarem o sucesso em tempo recorde.
             </h2>
@@ -33,7 +33,7 @@ export default function HeroProfile() {
             <Image
               src={ProfileImage}
               alt="Imagem de perfil"
-              className="items-center rounded-tl-full 2xl:h-[85vh] 2xl:w-[90vh] xl:h-[75vh] xl:w-[80vh] lg:h-[60vh] lg:w-[65vh] md:h-[40vh] md:w-[35vh] h-[35vh] w-[25vh]"
+              className="items-center rounded-tl-full 2xl:h-[85vh] 2xl:w-[90vh] xl:h-[75vh] xl:w-[80vh] lg:h-[60vh] lg:w-[65vh] md:h-[50vh] md:w-[35vh] h-[35vh] w-[25vh]"
             />
             <div className="absolute bottom-4 h-full w-full border-orange-900 border-2 rounded-tl-full right-6"></div>
           </div>
