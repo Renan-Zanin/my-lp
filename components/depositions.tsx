@@ -29,17 +29,16 @@ export default function Depositions() {
             animateOnce={true}
           >
             <Card className="flex flex-col items-center px-4 py-8 ">
-              <CardHeader className="flex flex-col items-center">
-                <CardTitle className="flex flex-col items-center">
-                  <span className="pb-2">Nome</span>
-                  <p className="text-sm">Cargo</p>
-                </CardTitle>
-              </CardHeader>
+              {/* <CardHeader className="flex flex-col items-center">
+                <CardTitle className="flex flex-col items-center"></CardTitle>
+              </CardHeader> */}
               <CardContent>
                 <p className="w-[200px] md:text-start text-center">
-                  &quot;Ofereço total personalização em minhas soluções,
-                  adaptando cada elemento para refletir a identidade da sua
-                  empresa.&quot;
+                  &quot;Renan foi fundamental para nossa empresa. Sua expertise
+                  em desenvolvimento web React e criação de landing pages
+                  aumentaram nossas conversões significativamente. Seu suporte
+                  contínuo e compromisso com a qualidade são incomparáveis.
+                  Recomendo seus serviços sem hesitação.&quot;
                 </p>
               </CardContent>
             </Card>
