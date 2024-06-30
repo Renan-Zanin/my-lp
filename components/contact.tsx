@@ -27,8 +27,9 @@ export default function Contact() {
             <p className="xl:text-xl lg:text-lg xl:w-[40vw] w-[75vw] md:mb-16 mb-10 text-wrap xl:text-end text-start">
               Estou sempre à procura de novos desafios e oportunidades para
               ajudar meus clientes a alcançar seus objetivos digitais. Se você
-              precisa de um site do zero, uma atualização no seu site atual ou
-              uma nova aplicação web, estou aqui para ajudar!
+              precisa de um site do zero, uma atualização no seu site atual, uma
+              nova aplicação web ou montar o seu ecommerce estou aqui para
+              ajudar!
             </p>
             <div className="flex justify-center items-center gap-4">
               <span>Visite também minhas redes:</span>

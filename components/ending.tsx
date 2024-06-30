@@ -20,11 +20,10 @@ export default function EndingSection() {
           </h2>
           <p className="xl:text-xl text-base lg:text-lg lg:w-[60vw] xl:w-[40vw] w-[80vw] md:w-[60vw] lg:mb-24 mb-16 text-wrap text-start">
             Não espere mais para elevar sua presença online a novos patamares de
-            sucesso. Nossas Landing Pages de Alto Impacto e Soluções Web
+            sucesso. Minhas Landing Pages de Alto Impacto e Soluções Web
             Personalizadas estão prontas para impulsionar seu negócio para o
-            próximo nível. Entre em contato conosco hoje mesmo para começar sua
-            jornada rumo ao sucesso digital. Estamos ansiosos para trabalhar com
-            você!
+            próximo nível. Entre em contato hoje mesmo para começar sua jornada
+            rumo ao sucesso digital. Estou ansiosos para trabalhar com você!
           </p>
           <Button aria-label="Aproveite a oferta" asChild>
             <Link
