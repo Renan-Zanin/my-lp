@@ -23,7 +23,7 @@ export default function EndingSection() {
             sucesso. Minhas Landing Pages de Alto Impacto e Soluções Web
             Personalizadas estão prontas para impulsionar seu negócio para o
             próximo nível. Entre em contato hoje mesmo para começar sua jornada
-            rumo ao sucesso digital. Estou ansiosos para trabalhar com você!
+            rumo ao sucesso digital. Estou ansioso para trabalhar com você!
           </p>
           <Button aria-label="Aproveite a oferta" asChild>
             <Link
